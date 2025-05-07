@@ -136,7 +136,15 @@ diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
-
+let resultArr = [];
+function diceRoll(rolls, diceSides){
+for(i=0; i<rolls; i++){
+  result = Math.ceil(Math.random() * diceSides);
+  resultArr.push(result);
+}
+}
+diceRoll(8,20);
+console.log(resultArr);
 /******************************************************************************
 3.
 
@@ -163,7 +171,17 @@ skal returnere:
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
+const stringArr=[" thIS", "teXt ", " nEeds ", "to", "BE", "cleANED ", " Up"];
+let newArr = [];
+function formatText(stringArr){
+  for ( let word of stringArr){
+    let formattedWord = word.trim().toLowerCase();
+    newArr.push(formattedWord);
+  }
+  return newArr.join(" ");
 
+}
+console.log(formatText(stringArr));
 /******************************************************************************
 4.
 
