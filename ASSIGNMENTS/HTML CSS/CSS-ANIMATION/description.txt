@@ -1,0 +1,71 @@
+🎯 Objective
+The goal of this assignment is to help you practice using CSS animations, transitions, and transforms to create interactive and visually appealing elements on a webpage.
+You will apply your creativity and the CSS techniques you’ve learned to design an engaging layout or interactive component.
+
+📋 Assignment Requirements
+🧱 Page Layout and Structure:
+Create a simple webpage with at least 3 different sections (e.g., header, main content, footer).
+
+Include at least:
+
+One button
+
+One link
+
+One image
+
+🎞️ Animation:
+Use CSS @keyframes to animate at least one element on the page.
+
+The animation must include two or three steps (use percentage values like 0%, 50%, 100%).
+
+Example animations:
+A bouncing ball
+
+A text that fades in and moves
+
+A button that changes color and scales on hover
+
+🔁 Transition:
+Add smooth transitions to elements like buttons, links, or images.
+
+Use transition to create effects on hover or focus (e.g., change background color, size).
+
+Example transitions:
+Change the color of a button on hover
+
+Scale an image smoothly on hover
+
+A text block that changes opacity on hover
+
+🔄 Transform:
+Use CSS transform on at least one element.
+
+Apply transformations like rotate, scale, translate, or skew to move or resize the element or change its orientation.
+
+Example transforms:
+Rotate an element when the page loads
+
+Make an image zoom in on hover
+
+Skew a heading to give a 3D effect
+
+💡 Combine Animation, Transition, and Transform:
+Try combining all three—animation, transition, and transform—on a single element.
+
+Example:
+A button that scales up and changes color on hover,
+
+The text inside the button also fades in using @keyframes.
+
+⭐ Bonus Challenge (Optional):
+Create an interactive menu or card design that uses a combination of animations, transitions, and transforms.
+When the user hovers over the menu or card, apply multiple effects such as:
+
+Scaling
+
+Rotation
+
+Color change
+
+Position shift

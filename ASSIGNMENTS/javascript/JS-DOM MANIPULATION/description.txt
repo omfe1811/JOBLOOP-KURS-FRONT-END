@@ -1,0 +1,67 @@
+Task: Create Your Own Interactive Website! 🎨✨
+
+Hello, JavaScript master! 🤓 Now it’s time to put everything you’ve learned so far into practice and create your very own interactive website. This task gives you the freedom to be creative and use DOM manipulation along with all the other concepts we’ve covered in JavaScript Basic. 🎉
+
+Task Description
+
+Create a dynamic and interactive website.
+You get to decide what your website will be about! It can be:
+
+A tool (e.g., a list generator, calculator, or something else useful).
+
+A fun project, like an art generator inspired by "Circle Maker".
+
+Or anything else – use your imagination! 🌟
+
+Use DOM manipulation to change the content on the page.
+This can include:
+
+Dynamically creating and removing HTML elements.
+
+Changing the text or style of existing elements.
+
+Showing and hiding data on the page.
+
+Combine the concepts you’ve learned:
+
+Variables and data types: Create variables to store data, such as user-selected input or results.
+
+Functions: Break your code into functions for reusability.
+
+Loops and conditions: Use loops to iterate over data and conditions to handle different cases.
+
+Arrays and objects: Use arrays or objects to store and display data, such as lists of items or user information.
+
+Tips and Requirements:
+
+Start small: Begin with one function and build from there.
+
+Make it visual: Use CSS and JavaScript to change the appearance of elements, such as colors, sizes, or positions.
+
+Use comments: Add comments to your code to explain what the different parts do.
+
+Example Ideas:
+
+A simple art generator:
+Let the user choose the number of circles or squares, and dynamically display them on the page.
+
+A hobby selector:
+Create a function that shows a random hobby from a list.
+
+A small store:
+Show a list of products and their prices.
+
+Inspiration:
+
+Remember the "Circle Maker" project from class. We used user input to create circles with dynamic properties. You can get inspiration from that, or create something entirely new!
+
+What to Submit:
+
+Link to your GitHub repo + link to GitHub Pages.
+
+A brief explanation of what your website does (either as a comment in the code or as text on the page).
+
+A creative and well-executed project! 🎉
+
+We’re excited to see what you come up with! Good luck! 💪😊
+
