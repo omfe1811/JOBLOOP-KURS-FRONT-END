@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* snap, smooth scroll */
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: #f1dfc9;
+}
+:root {
+  /*      COLORS      */
+  --dark-blue: #021130;
+}
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(254, 238, 255, 1) 0%,
+    rgba(251, 255, 219, 1) 47%,
+    rgba(222, 255, 240, 1) 100%
+  );
+}
+.artist-image {
+  --s: 100%; /* image size */
+  --b: 7px; /* control the border thickness */
+  --n: 3; /* number of borders */
+  --c: #005761;
+  width: var(--s);
+  aspect-ratio: 0.8; /* It works with any ratio */
+  object-fit: fill;
+  --_p: calc(var(--b) * var(--n));
+  --_d: calc(var(--s) / (2 * var(--n)) + var(--b));
+  padding: var(--_p);
+  border-radius: calc(var(--_p) + var(--b) / 4);
+  border-image: repeating-radial-gradient(
+      var(--c) 0,
+      #0000 2px calc(var(--_d) / 2 - 2px),
+      var(--c) calc(var(--_d) / 2) var(--_d)
+    )
+    49.8% / var(--_p);
+  clip-path: inset(0 round var(--_p));
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9001;
+}
+
+nav {
+  display: flex; /* 
+  gap: 20px; */ /* 
+  justify-content: space-evenly; */
+  align-items: flex-end;
+  height: 5%;
+}
+
+nav > div {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+h1 {
+  font-size: 1rem;
+}
+.j-a-c {
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  background-color: #385570;
+  height: fit-content;
+}
+.w100 {
+  width: 100%;
+}
+.w40 {
+  width: 40%;
+}
+.p-2rem {
+  padding: 2rem;
+}
+/* unvisited link */
+a:link {
+  color: #fcfed7;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f3cf47;
+}
+
+.white1 {
+  color: white;
+}
+.white {
+  color: #c8aa67;
+}
+section {
+  height: 100vh;
+}
+/* CARDS */
+/* .section > div {
+  height: 60vh;
+  width: 30%;
+} */
+.upper {
+  text-transform: uppercase;
+}
+
+#hero {
+  background-image: url("resources/pictures/hilma/Hilma_af_Klint_-_The_Ten_Largest_No._1_-_Childhood_-_1907.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a-l {
+  justify-content: left;
+}
+/* bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover;object-position:center center;background-color:rgba(0,0,0,0.2);opacity:1;transition:opacity 500ms linear */
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.erica-one-regular {
+  font-family: "Erica One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 5rem;
+}
+.align {
+  align-items: end;
+}
+.b-blue {
+  background-color: #0a4b9b6f;
+  width: 50%;
+}
