@@ -33,28 +33,6 @@ for alle, og lagre det i variabelen `averageAge`.
 Gjør beregningene ETTER at du legger til to år på alderen, og husk, hopp over Otto!
 
 ******************************************************************************/
-/* Use a regular for loop to iterate through the people array and perform the following:
-
-If the object's name value is "Otto", none of the changes below should be applied to that object (hint: use the continue keyword).
-
-Add a new key to each person object in the array called "city" and set its value to a random city from the cities array.
-
-Add a new key to each person object called "title" and set it to "Mr." for males and "Ms." for females.
-
-Increase the age by 2.
-
-Add "coding" to the beginning of the hobbies array in each object.
-
-Note: Use only one loop to perform all the steps above.
-
-Use console.log(people) after the loop to verify that the changes are correct.
-
-Use your loop to calculate the combined age of all the person objects and store it in a variable called combinedAge.
-
-Then, after the loop, use the combined age to calculate the average age of all, and store it in a variable called averageAge.
-
-Make the calculations after you add 2 years to the age, and remember to skip Otto! */
-
 
 const cities = ["New York", "London", "Paris", "Berlin", "Copenhagen", "Rome"];
 
@@ -111,17 +89,31 @@ const people = [
 let combinedAge = 0;
 
 // Skriv koden for oppgave 1 her
-const randomCity = Math.ceil(Math.random()*city.length);
+
 let averageAge = 0;
 // Add your logic here for other operations on people[i]
 for (let i = 0; i < people.length; i++) {
 	if (people[i].name === "Otto") {
 		continue;
 	}else{
-        person.city=cities[randomCity];
-    }
-	
-}
+        const randomCity = Math.ceil(Math.random()*cities.length);
+		people[i].city = cities[randomCity];
+		if(people[i].male){
+			people[i].title = "Mr."
+		}else{
+			people[i].title = "Ms."
+		}
+		people[i].age += 2;
+		combinedAge += people[i].age;
+		if (people[i].name === "Otto") {
+			combinedAge -= people[i].age;}
+            people[i].hobbies.unshift("coding")
+		}
+        
+	}
+	console.log(people);
+averageAge=combinedAge/(people.length-1);
+console.log(averageAge)
 
 /******************************************************************************
 2.
