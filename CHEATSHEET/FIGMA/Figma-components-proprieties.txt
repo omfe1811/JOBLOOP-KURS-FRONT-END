@@ -1,0 +1,97 @@
+In this session, we will explore components and props (properties) in Figma. Components allow you to create reusable design elements, such as buttons, icons, and cards. Props give you the ability to customize and adjust these components in a flexible way. By the end of the lesson, you will know how to:
+
+Create and use components for reusable design elements.
+
+Understand and adjust the props of components.
+
+Customize instances of components to meet specific design needs.
+
+Use components in different parts of your design to maintain consistency.
+
+What are Components in Figma?
+
+Components in Figma are design elements that can be reused across multiple places in your project. When you create a component, you can use multiple instances of this component, and any changes made to the main component will automatically reflect in all instances.
+
+Basic concepts:
+
+Main Component (Master Component): The original component that can be edited. All instances based on the main component will update automatically when changes are made to the main component.
+
+Instances: Copies of the main component that can be used in different places in the design. Instances can be customized, but they receive updates from the main component.
+
+How to Create and Use Components in Figma
+
+Step-by-step guide to components:
+
+Create a Component:
+
+Select an element (such as a button or an icon) on the canvas.
+
+Right-click and select "Create Component" (or use the shortcut Cmd/Ctrl + Alt + K).
+
+When you create a component, it will have a diamond icon in the top-left corner indicating it is a main component.
+
+Use Instances of Components:
+
+After creating the main component, you can drag and drop instances of the component to other places on the canvas.
+
+The instances will automatically reflect any changes made to the main component, unless specific customizations are made to the instance.
+
+Edit a Component:
+
+Double-click on the main component to enter edit mode and make changes.
+
+All instances connected to the component will automatically update when changes are made to the main component.
+
+Properties (Props) for Components
+
+Props for components allow you to customize the instances of the component without changing the main component. You can use properties to change text, color, size, and other aspects of the component to fit your design needs.
+
+Common props:
+
+Text: For components like buttons or labels, you can change the text in the instances without affecting the main component.
+
+Colors: You can customize the color of a component instance, such as the background color of a button, without affecting the main component.
+
+Size: If you have a button component, you can adjust the size of the instance to fit the design.
+
+Image Content: For components that contain images or icons, you can swap out the images in the instances without changing the main component.
+
+How to use props:
+
+Select an instance of a component.
+
+Go to the Properties Panel and find the available properties (e.g., text, color, size) that can be adjusted for the selected instance.
+
+Make the necessary changes to customize the instance for your design.
+
+Examples of How Properties Work
+
+Change Text in a Button:
+
+Create a button component.
+
+Use instances of this button in your design and change the text on the button without changing the main component.
+
+This is useful when you have multiple buttons with different labels, but the same design.
+
+Change the Color of a Component:
+
+You can use components for elements that have specific colors (e.g., buttons or cards).
+
+Customize the color in the instance without affecting the original component.
+
+Adjust the Size of a Component:
+
+If you have a button component, you can change the size of the instance to fit better within the design, without having to create separate buttons.
+
+Practical Exercise: Create Components and Adjust Their Properties
+
+Instructions:
+
+Open a new Figma file.
+
+Create a button component and use instances of this button in different parts of the design.
+
+Adjust properties like text, color, and size for the instances.
+
+Create multiple instances of the button and customize each one as needed.

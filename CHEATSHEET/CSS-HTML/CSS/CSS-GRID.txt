@@ -1,0 +1,108 @@
+1. What is Grid?
+Grid is a powerful layout tool in CSS that allows us to easily create complex and responsive layouts. With a grid system, we can place elements precisely across rows and columns, offering more control over design compared to Flexbox.
+
+2. Creating a Grid
+2.1 display: grid
+Defines a grid layout on an element.
+
+Example:
+.container { display: grid; }
+
+2.2 Columns and Rows: grid-template-columns and grid-template-rows
+Used to define the size and number of columns and rows.
+
+Example:
+.container { display: grid; grid-template-columns: 100px 200px 1fr; grid-template-rows: 50px auto; }
+
+This creates three columns (100px, 200px, and one flexible column) and two rows (50px and automatic height).
+
+2.3 Units of Measurement
+px: Fixed sizes.
+
+fr: Fractional unit for flexible columns/rows.
+
+auto: Adapts to the content size.
+
+%: Percentage of the parent element.
+
+2.4 Shorthand with repeat()
+Used to simplify repeated columns or rows.
+
+Example:
+.container { grid-template-columns: repeat(3, 1fr); }
+
+This creates three equally sized columns.
+
+3. Placing Elements
+3.1 Columns: grid-column-start and grid-column-end
+Used to place elements in specific columns.
+
+.item { grid-column-start: 1; grid-column-end: 3; }
+
+3.2 Shorthand: grid-column
+A shortcut for grid-column-start and grid-column-end.
+
+.item { grid-column: 1 / 3; }
+
+3.3 Rows: grid-row-start and grid-row-end
+Similarly, this places elements in specific rows.
+
+.item { grid-row: 2 / 4; }
+
+4. Spacing Between Cells
+4.1 column-gap and row-gap
+Defines space between columns and rows.
+
+.container { column-gap: 10px; row-gap: 15px; }
+
+4.2 Shorthand: gap
+Combines column and row gaps.
+
+.container { gap: 10px 15px; } /* columns and rows */
+
+5. Combining Areas
+5.1 grid-area
+Combines rows and columns to create larger areas.
+
+.item { grid-area: 1 / 1 / 3 / 3; } /* start-row / start-col / end-row / end-col */
+
+5.2 Named Areas with grid-template-areas
+Simplifies placement using named grid areas.
+
+.container { grid-template-areas: "header header" "main sidebar" "footer footer"; }
+
+6. Alignment
+6.1 The Entire Grid
+justify-content: Horizontal alignment of the grid.
+
+align-content: Vertical alignment of the grid.
+
+.container { justify-content: center; align-content: space-between; }
+
+6.2 Content Within Cells
+justify-items: Horizontal alignment of content inside cells.
+
+align-items: Vertical alignment of content inside cells.
+
+.container { justify-items: center; align-items: stretch; }
+
+6.3 Individual Items
+justify-self and align-self adjust individual elements.
+
+.item { justify-self: end; align-self: start; }
+
+7. Automatic Grid
+7.1 Automatic Columns/Rows
+grid-auto-columns and grid-auto-rows define the size of any extra columns or rows that are created automatically.
+
+7.2 Flow: grid-auto-flow
+Controls how new items are automatically placed in the grid.
+
+.container { grid-auto-flow: row; }
+
+8. Shorthand: grid
+Combines multiple properties in a single rule.
+
+.container { grid: auto-flow / 100px 1fr; }
+
+This creates an automatically flowing grid layout with fixed columns.

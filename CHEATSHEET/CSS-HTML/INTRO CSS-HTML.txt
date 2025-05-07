@@ -1,0 +1,87 @@
+HTML & CSS: Introduction
+
+Welcome to your journey into the world of web development! In this class, we will learn about HTML and CSS, the foundational building blocks for any website. By the end of this course, you will have the skills to create visually appealing, interactive, and responsive websites.
+
+What is HTML?
+HTML (HyperText Markup Language) is the standard language for creating websites and web applications. It defines the structure and content of a webpage using a system of "tags" and "attributes." Think of HTML as the blueprint of a building:
+
+Tags: These are like the bricks that define elements such as headings, paragraphs, images, and links.
+
+Attributes: These add extra information or functionality to your tags, like setting the width of an image or linking to a webpage.
+
+Practical uses for HTML:
+
+Structuring content, such as:
+
+Headings, paragraphs, and lists.
+
+Adding links, images, and multimedia elements.
+
+Creating forms to collect user input, such as login pages or surveys.
+
+Providing a basic framework for browsers to display your content.
+
+What is CSS?
+CSS (Cascading Style Sheets) is the language used to style and layout websites. While HTML structures your content, CSS makes it look good. It allows you to control aspects like colors, fonts, layout, and responsiveness.
+
+Think of CSS as the interior design of the building:
+
+Selectors: These are the elements you want to style (e.g., paragraphs, headings).
+
+Properties: These define what you want to change (e.g., color, font size).
+
+Values: These are the settings for the properties (e.g., blue, 16px).
+
+Practical uses for CSS:
+
+Styling elements, such as:
+
+Changing fonts, colors, and sizes.
+
+Adding spacing and margins for readability.
+
+Creating layouts with:
+
+Grids, flexbox, and positioning.
+
+Responsive design for mobile and desktop devices.
+
+Adding visual effects like:
+
+Hover animations.
+
+Transitions and transformations.
+
+Why Learn HTML and CSS?
+Create your own websites: Build personal portfolios, blogs, or websites for small businesses.
+
+Collaborate in teams: Understanding the basics of front-end development is essential for working with developers, designers, and other tech professionals.
+
+Open doors to advanced topics: Knowledge of HTML and CSS is fundamental to learning advanced web technologies like JavaScript, React, or backend development.
+
+Course Goals
+By the end of this course, you will:
+
+Understand the core concepts of HTML and CSS.
+
+Be able to structure and style a basic webpage.
+
+Have the tools to continue your learning journey into more advanced web development topics.
+
+Course Structure
+Here’s an overview of what you will learn in each session:
+
+1-1: Welcome to HTML
+1-2: Welcome to CSS
+1-3: Margin, padding, border, classes, and IDs
+2-1: Anchor tag and lists
+2-2: Flexbox
+2-3: Flexbox code-along
+3-1: Responsive design and images
+3-2: Colors, positioning, and backgrounds
+3-3: CSS variables
+4-1: Forms
+4-2: Media and dialog
+4-3: Create your own website
+
+We look forward to guiding you on your journey to becoming a junior web developer. Do your best with this first step, and remember that every line of code brings you closer to your goal!
