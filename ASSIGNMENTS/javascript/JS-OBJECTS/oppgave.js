@@ -3,39 +3,27 @@
 !LES OPPGAVETEKSTEN NØYE!
 ------------------------------------
 
-1.
+/******************************************************************************
+								OPPGAVE 1
+*******************************************************************************
 
 Bruk en vanlig 'for-løkke' til å iterere gjennom `people`-arrayet og utfør følgende:
-
-- Hvis objektets `name`-verdi er "Otto", skal ingen av endringene nedenfor gjøres 
-  på det objektet (hint: bruk `continue`-nøkkelordet).
-
+- Hvis objektets `name`-verdi er "Otto", skal ingen av endringene nedenfor gjøres på det objektet (hint: bruk `continue`-nøkkelordet).
 - Lag en ny nøkkel på hvert person-objekt i arrayet kalt "city" og sett verdien
   til en random by fra `cities`-arrayen.
-
 - Lag en ny nøkkel på hvert person-objekt kalt "title" og sett den til "Mr." for
   menn og "Ms." for kvinner.
-	
 - Øk alderen med 2.
-
 - Legg til "coding" i begynnelsen av hobby-arrayet i hvert objekt.
-
 **PS**: Bruk kun én løkke for å gjøre alle de ovennevnte stegene.
-
 Bruk `console.log(people)` etter løkken for å sjekke at endringene er riktige.
-
 Bruk løkken din til å regne ut den kombinerte alderen til alle person-objektene 
 og lagre det i variabelen `combinedAge`.
-
 Deretter, etter løkken, bruk den kombinerte alderen til å regne ut gjennomsnittsalderen
 for alle, og lagre det i variabelen `averageAge`.
-
 Gjør beregningene ETTER at du legger til to år på alderen, og husk, hopp over Otto!
-
 ******************************************************************************/
-
 const cities = ["New York", "London", "Paris", "Berlin", "Copenhagen", "Rome"];
-
 const people = [
 	{
 		name: "Thomas",
@@ -87,11 +75,8 @@ const people = [
 	}
 ];
 let combinedAge = 0;
-
 // Skriv koden for oppgave 1 her
-
 let averageAge = 0;
-// Add your logic here for other operations on people[i]
 for (let i = 0; i < people.length; i++) {
 	if (people[i].name === "Otto") {
 		continue;
@@ -116,20 +101,17 @@ averageAge=combinedAge/(people.length-1);
 console.log(averageAge)
 
 /******************************************************************************
-2.
+								OPPGAVE 2
+*******************************************************************************
 
 Lag følgende funksjon:
-
 Funksjonen skal ta inn ett tall som parameter.
-
 Funksjonen skal returnere et array med tilfeldige tall mellom 1 og 6.
 Lengden på arrayet bestemmes av tallet som funksjonen mottar som parameter
 (tenk på det som antall terninger vi kaster).
-
 Eksempler: 
 diceRoller(4) skal returnere noe som: [4, 1, 2, 6]
 diceRoller(6) skal returnere noe som: [5, 5, 6, 2, 3, 4]
-
 Legg til en andre parameter i funksjonen som bestemmer hvor mange sider terningen skal ha.
 diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 
@@ -145,24 +127,19 @@ for(i=0; i<rolls; i++){
 }
 diceRoll(8,20);
 console.log(resultArr);
+
 /******************************************************************************
-3.
-
+								OPPGAVE 3
+*******************************************************************************
 Lag følgende funksjon:
-
 Funksjonen skal ta inn ett array av strings som parameter.
-
 Inne i funksjonen, gjør følgende:
-
 Skriv en løkke som itererer gjennom stringene i arrayet, og gjør følgende:
 - Fjern mellomrom fra starten og slutten av hvert ord.
 - Gjør alle ordene om til små bokstaver.
-
 Bruk en "for...of"-løkke.
-
 Etter løkken, bruk en metode for å sette sammen arrayet til en enkelt string 
 med et enkelt mellomrom mellom ordene (" "), og returner den resulterende stringen.
-
 Eksempel:
 [" thIS", "teXt  ", " nEeds ", "to", "BE", "cleANED   ", " Up"]
 skal returnere:
@@ -171,6 +148,7 @@ skal returnere:
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
+
 const stringArr=[" thIS", "teXt ", " nEeds ", "to", "BE", "cleANED ", " Up"];
 let newArr = [];
 function formatText(stringArr){
@@ -182,26 +160,22 @@ function formatText(stringArr){
 
 }
 console.log(formatText(stringArr));
+
 /******************************************************************************
-4.
+								OPPGAVE 4
+*******************************************************************************
 
 Fullfør funksjonen nedenfor for å oppnå følgende:
-
 Returner stringen som mottas i første parameter med følgende endringer:
-
 Hver bokstav i stringen som matcher `charA` (andre parameteret) skal erstattes 
 med `charB` (tredje parameteret), og VICE VERSA - det vil si at bokstaver som 
 matcher `charA` skal byttes med `charB`, og bokstaver som matcher `charB` skal 
 byttes med `charA`.
-
 Eksempler:
-
 doubleSwap("this is a string", "i", "s")
 skal returnere "thsi si a itrsng"
-
 doubleSwap("m#ybe #nother #ppro#ch is necess#ry", "#", "a")
 skal returnere "maybe another approach is necessary"
-
 doubleSwap("what is the point of this?", "o", "t")
 skal returnere "whao is ohe ptino tf ohis?"
 
@@ -210,34 +184,43 @@ skal returnere "whao is ohe ptino tf ohis?"
 function doubleSwap(string, charA, charB) {
 	// Skriv koden for oppgave 4 her
 }
+function doubleSwap(string, charA, charB) {
+	let result="";
+  for(i=0; i<string.length; i++){
+	if(string[i]===charA){
+	  result+=charB;
+	}
+	else if(string[i]===charB){
+	  result+=charA;
+	} else{
+	  result+=string[i]
+	}
+  }
+  return result
+  
+  }
+  
+  console.log(doubleSwap("this is a string", "i", "s"))
 
-/******************************************************************************
-5.
-
+ /******************************************************************************
+								OPPGAVE 5
+*******************************************************************************
 EKSTRA UTFORDRING:
-
 (Løsning av denne oppgaven er ikke obligatorisk, kun for de som vil ha en ekstra utfordring)
-
 Lag en funksjon kalt `helloChecker` som tar inn en string som parameter.
-
 Skriv kode som sjekker alle ordene i stringen for å finne ut om noen av dem
 matcher ordet for "hei" på noen av disse språkene:
-
 - hello (engelsk)
 - ciao (italiensk)
 - salut (fransk)
 - hallo (tysk)
 - hola (spansk)
 - czesc (polsk)
-
 Hvis noen av ordene i stringen matcher et av disse, skal funksjonen returnere:
 "HELLO oppdaget på (navn på språket)."
-
 Hvis ingen av ordene i strengen matcher, skal funksjonen returnere:
 "Ingen HELLO oppdaget."
-
 PS: Sørg for at funksjonen er case-insensitive; både "Hello" og "hello" skal oppdages.
-
 Jeg har lagt til noen testvariabler for å sjekke funksjonen din.
 
 ******************************************************************************/
@@ -254,3 +237,31 @@ const greetings = [
 ];
 
 // Skriv koden for oppgave 5 her
+
+	  function helloChecker(text){
+		const lowerText=text.toLowerCase();
+		let language="";
+		if (lowerText.includes("hello")){
+		  language="English";
+		}else if(lowerText.includes("ciao")){
+		  language="Italian";
+	  }else if(lowerText.includes("salut")){
+		language="French";
+	  }else if(lowerText.includes("hallo")){
+		language="German";  
+	  }else if(lowerText.includes("hola")){
+		language="Spanish"; 
+	  }else if(lowerText.includes("czesc")||lowerText.includes("cześć")){
+		language="Polish";
+	  }
+	  if(language){
+		console.log(`HELLO detected in ${language}.`)
+	  }else{
+		console.log("No HELLO detected.")
+	  }
+	}
+	   for (const greeting of greetings){
+		helloChecker(greeting)
+	   }
+	
+	
