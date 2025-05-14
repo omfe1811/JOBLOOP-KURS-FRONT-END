@@ -1,0 +1,158 @@
+1. What is Flexbox?
+
+   Flexbox (Flexible Box) is a layout model in CSS that provides easy and efficient control over the placement of elements in a container. It makes it easier to create flexible, responsive, and dynamic layouts where elements can adjust both in size and position. Flexbox is especially useful when you want a layout where elements can automatically adjust based on available space, such as when the screen size changes.
+
+2. display: flex;
+
+   display: flex; defines that an element is a flexible container. Its direct children become flexible items that can adapt based on the available space in the container.
+
+   Example:
+
+   .container { display: flex; }
+
+3. flex-direction
+
+   flex-direction determines the direction in which the elements will be placed. The default value is row, which places elements horizontally from left to right.
+
+   - row (default): Elements are placed horizontally.
+   - column: Elements are placed vertically.
+   - row-reverse: Elements are placed horizontally, but in reverse order.
+   - column-reverse: Elements are placed vertically, but in reverse order.
+   
+   Example:
+
+   .container { display: flex; flex-direction: column; }
+
+4. justify-content
+
+   justify-content aligns the elements along the main axis (horizontally for row, vertically for column).
+
+   - flex-start: Align elements to the start.
+   - flex-end: Align elements to the end.
+   - center: Align elements in the center.
+   - space-between: Distribute elements with equal space, but no space before the first or after the last.
+   - space-around: Distribute elements with equal space, including space before the first and after the last element.
+
+   Example:
+
+   .container { display: flex; justify-content: space-between; }
+
+5. align-items
+
+   align-items aligns the elements along the cross axis (vertically for row, horizontally for column).
+
+   - flex-start: Align elements at the top (or left).
+   - flex-end: Align elements at the bottom (or right).
+   - center: Align elements in the center.
+   - baseline: Align elements to their text baseline.
+   - stretch (default): Stretch the elements to fill the container.
+
+   Example:
+
+   .container { display: flex; align-items: center; }
+
+6. Gap
+
+   Gap will be covered more when we get to grid.
+
+   gap, row-gap, and column-gap determine the distance between elements in the Flexbox container:
+
+   - gap: Sets the space between all elements in both row and column.
+   - row-gap: Sets the space between elements in the row direction.
+   - column-gap: Sets the space between elements in the column direction.
+
+   Example:
+
+   .container { display: flex; gap: 20px; }
+
+7. Shortened Notations: flex-flow, flex
+
+   flex-flow is a shorthand for flex-direction and flex-wrap:
+
+   Example:
+
+   .container { display: flex; flex-flow: row wrap; }
+
+   flex is a shorthand for flex-grow, flex-shrink, and flex-basis:
+
+   Example:
+
+   .item { flex: 1; }
+
+8. align-content
+
+   align-content adjusts the lines or columns in Flexbox when they wrap. Used together with flex-wrap.
+
+   - flex-start: Align the lines at the start.
+   - flex-end: Align the lines at the end.
+   - center: Align the lines in the center.
+   - space-between: Distribute the lines with equal space.
+   - space-around: Distribute the lines with space before the first and after the last.
+
+   Example:
+
+   .container { display: flex; flex-wrap: wrap; align-content: center; }
+
+9. align-self
+
+   align-self allows you to override align-items for individual elements:
+
+   - auto (default): Uses the value from align-items.
+   - flex-start, flex-end, center, baseline, stretch: Specify the alignment for individual elements.
+
+   Example:
+
+   .item { align-self: flex-end; }
+
+10. flex-wrap
+
+    flex-wrap determines if elements should wrap onto multiple lines when there isn’t enough space:
+
+    - no-wrap (default): The elements will not wrap.
+    - wrap: The elements will wrap to the next line.
+    - wrap-reverse: The elements will wrap to the next line in reverse order.
+
+    Example:
+
+    .container { display: flex; flex-wrap: wrap; }
+
+11. order
+
+    order adjusts the order of elements in the container. The default value is 0. Increase or decrease the value to change the order.
+
+    Example:
+
+    .item { order: 1; }
+
+12. flex-grow, flex-shrink, flex-basis
+
+    - flex-grow determines how much an element should grow relative to other elements in the container:
+
+      Example:
+
+      .item { flex-grow: 2; }
+
+    - flex-shrink determines how much an element should shrink if space is limited:
+
+      Example:
+
+      .item { flex-shrink: 1; }
+
+    - flex-basis determines the base size of an element before Flexbox makes any adjustments:
+
+      Example:
+
+      .item { flex-basis: 100px; }
+
+13. min-width / max-width / min-height / max-height
+
+    min-width and max-width set the minimum and maximum width of elements in the horizontal direction. min-height and max-height do the same for the vertical direction.
+
+    Example:
+
+    .item { min-width: 200px; max-width: 400px; }
+
+Flexbox Froggy Game:
+
+Here is a game designed to learn or practice the placement of elements using flexbox.
+Flexbox Froggy

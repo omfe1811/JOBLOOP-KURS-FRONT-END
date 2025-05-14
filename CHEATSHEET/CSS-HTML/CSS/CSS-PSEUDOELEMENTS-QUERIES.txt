@@ -1,0 +1,172 @@
+1. Pseudo-elements
+Pseudo-elements allow you to style specific parts of an element. They are written with double colons ::.
+
+1.1 Common pseudo-elements:
+::before: Adds content before the element’s actual content.
+
+::after: Adds content after the element’s actual content.
+
+::first-letter: Styles the first letter in an element.
+
+::first-line: Styles the first line in an element.
+
+Example 1:
+
+css
+Copy code
+p::first-letter { 
+  font-size: 2em; 
+  font-weight: bold; 
+}
+This makes the first letter of the paragraph larger and bold.
+
+Example 2:
+
+css
+Copy code
+.note::after { 
+  content: " (Read more)"; /* Adds a message */ 
+  color: blue; /* Color of the message */ 
+  font-style: italic; /* Italic text */ 
+}
+Using ::after to add a message.
+
+2. Pseudo-selectors
+Pseudo-selectors let you style elements based on their state or relation to other elements. They are written with a single colon :.
+
+2.1 Common pseudo-selectors:
+:hover: Activated when the mouse hovers over an element.
+
+:focus: Activated when an element is in focus.
+
+:nth-child(n): Selects the nth child element in a container.
+
+:not(selector): Excludes elements from styling.
+
+Example 1:
+
+css
+Copy code
+button:hover { 
+  background-color: blue; 
+  color: white; 
+}
+When the user hovers over a button, its background and text color change.
+
+Example 2:
+
+css
+Copy code
+section:nth-child(odd) { 
+  background-color: #f2f2f2; /* Light gray */ 
+} 
+
+section:nth-child(even) {
+  background-color: #ffffff; /* White */ 
+}
+Alternating background colors with :nth-child.
+
+Example 3:
+
+css
+Copy code
+div:nth-child(3n) { 
+  background-color: lightblue; /* Light blue background */ 
+}
+Style every 3rd element using :nth-child.
+
+Example 4:
+
+css
+Copy code
+button:not(.primary) { 
+  background-color: gray; /* Gray for all except .primary */ 
+}
+Exclude specific elements using :not.
+
+3. Targeting Elements
+3.1 Targeting Child Elements
+To target direct child elements, use the child selector >.
+
+Example:
+
+css
+Copy code
+main > p { 
+  color: gray; 
+}
+This only styles p elements that are direct children of a main element.
+
+3.2 Targeting Multiple Elements
+You can style multiple types of elements at the same time by using a comma.
+
+Example:
+
+css
+Copy code
+div, section { 
+  padding: 20px; 
+}
+Both div and section elements get the same padding.
+
+3.3 Targeting All Descendants
+To style all elements inside a container, use the universal selector *.
+
+Example:
+
+css
+Copy code
+article * { 
+  margin: 5px; 
+}
+All elements inside an article get a 5px margin.
+
+4. Media Queries
+Media queries allow us to create responsive designs by using different styles based on screen size, resolution, or device type. This is essential for optimizing websites for various users.
+
+4.1 Basic Syntax
+css
+Copy code
+@media (rule) { /* CSS rules */ }
+The content inside the media query block only runs if the rule is true.
+
+Common rules:
+
+max-width: Targets screens with width less than or equal to the specified value.
+
+min-width: Targets screens with width greater than or equal to the specified value.
+
+orientation: Chooses based on whether the screen is in portrait or landscape mode.
+
+4.2 Typical Breakpoints
+Breakpoints are defined screen sizes where layout changes. This improves the user experience on different devices.
+
+Mobile: Max width of 600px.
+
+Tablet: 601px to 1024px.
+
+Desktop: Over 1024px.
+
+Example:
+
+css
+Copy code
+@media (max-width: 600px) {
+  body { font-size: 14px; } /* Mobile */
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body { font-size: 16px; } /* Tablet */
+}
+
+@media (min-width: 1025px) {
+  body { font-size: 18px; } /* Desktop */
+}
+Font size is adjusted based on screen size.
+
+4.3 Optimization for Different Screen Sizes
+Images: Use percentage-based sizes to ensure they scale to different screen widths.
+
+Text: Use relative units like em or rem for font sizes.
+
+Flexible Layouts: Use tools like Flexbox or Grid for dynamic layouts.

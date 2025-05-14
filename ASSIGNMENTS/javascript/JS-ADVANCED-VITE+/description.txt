@@ -1,0 +1,34 @@
+Hello frontend developers!
+
+In this task, you’re going to create a website that:
+
+Is built using Vite. Use the following command in the terminal to create the project:
+
+bash
+Copy code
+npm create vite@latest
+Uses an npm package of your choice. Find an npm package you find interesting, and read its documentation to learn how to install and use it.
+
+Aside from that, you’re free to choose the content and design of the website. Just remember that the goal is to become familiar with Vite/npm, and this is also another chance to build something that could look great in your portfolio. Therefore, it's recommended to put real effort into the project.
+
+Npm package suggestions:
+
+If you’re unsure which package to use, here are three suggestions:
+
+axios – A popular HTTP client that simplifies API requests.
+
+uuid – Generates unique IDs (UUIDs) in JavaScript applications.
+
+date-fns – A utility toolkit for handling dates in JavaScript, both in the browser and Node.js.
+
+You must submit 2 links:
+
+A link to your GitHub repository
+
+A link to your GitHub Pages deployment
+
+GitHub Pages works a bit differently with Vite.
+Here’s a guide on how to deploy your Vite project to GH Pages:
+(Links to an external site)
+
+Good luck! 😊👍

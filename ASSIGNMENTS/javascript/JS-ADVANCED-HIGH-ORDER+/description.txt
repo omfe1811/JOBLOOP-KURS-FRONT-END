@@ -1,0 +1,49 @@
+Read the assignment carefully.
+Add comments in your code that briefly explain what the code does.
+
+You're given an array of objects representing products in an online store, Alva's Magical Market. Alva is an innovative entrepreneur who sells everything from electronics to clothing and kitchen appliances. One day, she faces a challenge: she needs help analyzing her product list to gain better control of her inventory.
+
+Can you help Alva solve her problems? If you succeed, she promises you 20% off the entire store! 🎉
+
+Case 1
+Find the most affordable items for Alva
+Use .filter() to extract all products that cost less than 200 gold coins. These items tend to sell out quickly, and she wants them grouped into a list.
+
+Create a list of product names for quick reference
+Use .map() to generate a list that contains only the names of the products. Alva will use this list to print signs in the store.
+
+Find the popular electronics products
+Alva loves electronics, but she has lost track of what's in this category. Use a chained combination of .filter() and .map() to make a list of product names that belong to the "electronics" category.
+
+Find the luxury products in Alva's assortment
+Use .some() to check if there are any products that cost more than 1000 gold coins. If so, Alva wants to place them in a special luxury corner of the store.
+
+Calculate the value of Alva's entire inventory
+Use .reduce() to calculate the total cost of all products. Alva needs this info to set the correct insurance value for her goods.
+
+Case 2
+Alva has decided to clean up her inventory by launching a big sale. She needs your help analyzing the products to find the best ways to organize her offers.
+
+Find all products that cost less than 200 – these should get an extra discount to help them sell out fast.
+
+Create a list with the names of all products – so Alva can print a flyer for the sale.
+
+Find the names of all products in the "clothing" category – clothes always sell well, and Alva wants to market these specifically.
+
+Check if there are products that cost more than 1000 – expensive products can be harder to sell, and Alva is considering giving them a special offer.
+
+Calculate how much the entire inventory is worth before the sale starts – so Alva knows how much she can potentially earn.
+
+Now it’s up to you to help Alva gain control over her shop! 👩‍💻✨
+
+js
+Copy code
+const products = [
+  { name: "Smartphone", price: 800, category: "electronics" },
+  { name: "Headphones", price: 150, category: "electronics" },
+  { name: "Coffee Maker", price: 100, category: "home appliances" },
+  { name: "Blender", price: 250, category: "home appliances" },
+  { name: "Laptop", price: 1200, category: "electronics" },
+  { name: "T-shirt", price: 50, category: "clothing" },
+  { name: "Sneakers", price: 300, category: "clothing" }
+];

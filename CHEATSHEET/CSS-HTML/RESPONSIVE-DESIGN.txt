@@ -1,0 +1,127 @@
+1. Fixed Measurements
+
+1.1 What are fixed measurements?
+Fixed measurements refer to sizes that do not adjust to the screen size. These values are constant, regardless of the device's screen dimensions. Examples of fixed measurements are px and em.
+
+1.2 px (pixels)
+
+A fixed unit of measurement commonly used in web design. Pixels are independent of screen resolution and do not change when the screen size changes.
+
+.button { 
+  width: 200px; /* Fixed width of 200px */ 
+}
+
+1.3 ch
+
+Related to the width of the letter "0" in the selected font, and is especially useful for text-based elements like input fields.
+
+.input-field { 
+  width: 20ch; /* Width equals 20 characters */ 
+}
+
+1.4 em
+
+Relative to the font size of the current element. It is commonly used for elements that should change size based on the surrounding font size.
+
+.container { 
+  font-size: 16px; 
+} 
+
+.element { 
+  font-size: 2em; /* 2 times the font size of the container (32px) */ 
+}
+
+1.5 rem
+
+Relative to the font size of the root element (<html>). This provides more control over scalability across the entire document.
+
+html { 
+  font-size: 16px; /* Basic font size */ 
+} 
+
+h1 { 
+  font-size: 2rem; /* 32px (2 x 16px) */ 
+}
+
+2. Responsive Measurements
+
+2.1 What are responsive measurements?
+Responsive measurements allow elements on a webpage to adjust to different screen sizes and resolutions. This is essential for creating mobile-friendly websites. Examples of responsive measurements are vw, vh, %, as well as max-width and min-width.
+
+2.2 % (Percentage)
+
+Uses percentages to define sizes relative to another element, typically a parent element. This method helps create flexible and scalable layouts.
+
+.container { 
+  width: 80%; /* 80% of the parent element's width */ 
+}
+
+2.3 vh (viewport height)
+
+The vh unit is 1% of the viewport height. This is useful for creating full-screen elements that should fill the entire screen height.
+
+.full-height { 
+  height: 100vh; /* 100% of the viewport height */ 
+}
+
+2.4 vw (viewport width)
+
+1vw is 1% of the viewport width. This allows elements to adjust to the screen width, regardless of the device size.
+
+.full-width { 
+  width: 100vw; /* 100% of the viewport width */ 
+}
+
+2.5 max-width / max-height and min-width / min-height
+
+These properties are used to set the maximum and minimum width or height of an element, providing greater flexibility for responsive design.
+
+.container { 
+  max-width: 100%; /* Maximum width is 100% of the parent element */ 
+} 
+
+.element { 
+  min-width: 300px; /* Minimum width of 300px */ 
+}
+
+3. Using Developer Tools in the Browser for Responsive Design
+
+3.1 Emulating devices
+By using the browser's developer tools, you can test how your website looks on different devices and screen sizes. This helps you validate the responsiveness of your design.
+
+3.2 Changing window size
+Some developer tools allow you to manually resize the browser window to observe how the layout changes when the window is scaled.
+
+4. Images and Responsive Design
+
+4.1 Image sizes
+To ensure that the images on your website are responsive, you can use percentages and relative sizes for images so that they adjust to the screen size.
+
+<img src="image.jpg" alt="Image description" width="100%" height="auto">
+
+4.2 Image file types (Raster vs. SVG)
+
+   - Raster images (e.g., JPG, PNG) are made of pixels and can lose quality when scaled.
+   - SVG (Scalable Vector Graphics) are vector-based images and can be scaled infinitely without losing quality, making them ideal for responsive design.
+
+<img src="image.svg" alt="Logo" width="100%">
+
+4.3 Object-fit
+Use object-fit to control how the content of an image or video fills its container without distorting it.
+
+img { 
+  object-fit: cover; /* Fills the element's size without distorting the image */ 
+}
+
+img { 
+  object-fit: contain; /* Keeps the entire image within the element's size without cropping or distorting it */ 
+}
+
+4.4 <picture> and <source srcset="">
+By using the <picture> element together with <source srcset="">, you can specify different image formats and sizes for different devices.
+
+<picture> 
+  <source srcset="image-320w.jpg" media="(max-width: 320px)"> 
+  <source srcset="image-768w.jpg" media="(max-width: 768px)"> 
+  <img src="image-1024w.jpg" alt="Image"> 
+</picture>

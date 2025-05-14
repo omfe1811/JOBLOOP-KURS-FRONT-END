@@ -1,0 +1,54 @@
+1. Anchor Tag <a>
+
+   1.1 Internal and External Linking
+   Anchor tags are used to create links to other pages. You can create both internal and external links.
+
+   Internal Linking
+   An internal link refers to another page within the same project.
+
+   <a href="about-us.html">Learn more about us</a>
+
+   External Linking
+   An external link points to another website outside your project.
+
+   <a href="https://www.example.com" target="_blank">Visit Example</a>
+
+   Using target="_blank" opens the link in a new window or tab.
+
+   1.2 Links on Images and Boxes
+   You can also use the <a> tag to create links on images or boxes. Links can be very useful for creating navigation on websites.
+
+   <a href="https://www.example.com"> <img src="logo.png" alt="Logo"> </a>
+
+2. Lists
+
+   Every list in HTML uses <li> (list item) to define each individual element in the list, whether it is an ordered or unordered list. Whenever you use <ul>, <ol>, or <dl>, you must use <li> to add content to the list.
+
+   2.1 <ol>
+   An ordered list is used when the order of the elements is important.
+
+   <ol>
+     <li>First item</li>
+     <li>Second item</li>
+   </ol>
+
+   2.2 <ul>
+   An unordered list is used when the order of the elements doesn’t matter.
+
+   <ul>
+     <li>First item</li>
+     <li>Second item</li>
+   </ul>
+
+   2.3 <dl>, <dt>, <dd>
+   Definition lists are used to create a list of terms with descriptions.
+
+3. List Styling
+
+   3.1 list-style-type
+   With list-style-type, you can change the appearance of the list items. This CSS property gives you several options for how the list should appear, such as circles, squares, or no markers at all. You can choose from different styles like disc, circle, square, and none, depending on how you want the list to look.
+
+   <ul style="list-style-type: none;">
+     <li>Item 1</li>
+     <li>Item 2</li>
+   </ul>

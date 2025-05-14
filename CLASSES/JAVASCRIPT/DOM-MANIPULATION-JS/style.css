@@ -1,0 +1,39 @@
+
+
+ #grandparent {
+      background-color: rgb(174, 174, 131);
+      padding: 50px;
+      width: 600px;
+      height: 600px;
+      box-sizing: border-box;
+    }
+
+    .parent {
+      background-color: red;
+      padding:40px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .child {
+      background-color: green;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .green-rect:last-child {
+      margin-bottom: 0;
+    }
+
+    .grandchild {
+      background-color: blue;
+      width: 48%;
+      height: 100%;
+    }

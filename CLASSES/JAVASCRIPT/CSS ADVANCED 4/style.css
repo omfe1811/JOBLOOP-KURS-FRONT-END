@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0.5rem;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+div{
+    height:200px;
+    width:300px;
+    background-color: rgb(253, 219, 180);
+}
+div::before{
+    content:"Div starts here";
+}
+div::after{
+    content: "div ends here";
+}
+button{
+    height:50px;
+    width:100px;
+    border-radius: 40px;
+    background-color: aquamarine;
+    position: relative;
+
+   
+}
+button:hover{
+background-color: blue;
+transform: scale(1.1);
+
+animation: bounce 2s ease-in-out alternate;
+animation-iteration-count: 2;
+}
+
+@keyframes bounce{
+    0%{
+top:0;
+background-color: aquamarine;
+    }
+    100%{
+        top:500px;
+        background-color:blue;
+    }
+}
+main{
+    timeline-scope:--timeline;
+    display:flex;
+}
+.scroll-container{
+    scroll-timeline: --timeline;
+    scroll-animation-axis:block;
+    max-height:30vh;
+    overflow-y: scroll;
+    
+}
+
+
+/* 
+.new{
+    background-color: #fff;
+    height:500px;
+    width:500px;
+    border-radius: 50%;
+}
+.new::before{
+    scale:1.5;
+    content:"2";
+}
+
+.new:hover{
+scale:1.5;
+opacity:
+}
+ */
+ /* .new{
+    height: 400px;
+    content:"";
+    background-color: blueviolet;
+    opacity: 0.5;
+    transition: background-color 2s ease-in-out, scale 1s ease-in ;
+ }
+ .new::before{
+    opacity: 0.5;
+    content: "";
+ }
+ .new:hover{
+    background-color: brown;
+    opacity: 1;
+    content: "yay, hoverin";
+    
+ } */
+/*  .new::after{
+content: "yay, hoverin";
+ } */

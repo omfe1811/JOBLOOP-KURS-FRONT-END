@@ -1,0 +1,41 @@
+React: Prerequisites
+Running JavaScript Locally
+JavaScript is primarily executed in the browser via a JavaScript engine. To run JavaScript locally, we need to install one of these engines. The most popular one is V8, and we can install it through NodeJS.
+
+Additionally, by running JavaScript locally, you now have access to a registry of open-source packages released under free software licenses: the NPM Registry. This makes it easy to bring in third-party functionality into your projects, so you don't have to develop everything yourself.
+
+Useful NPM Commands:
+Print short usage information (this applies to almost all CLI programs):
+
+npm --help
+
+node --help
+
+Create a new NPM project in the directory you're in:
+
+npm init
+
+Install a package from the NPM Registry into your project:
+
+npm install name-of-package
+
+Example: npm install react
+
+Uninstall a package from your project:
+
+npm uninstall name-of-package
+
+Example: npm uninstall react
+
+Run a JavaScript file locally:
+
+node path-of-file
+
+Example: node /c/dev/main.js
+
+Links:
+NodeJS: [Link to NodeJS website]
+
+Node Package Registry: [Link to NPM registry]
+
+NPM Documentation: [Link to NPM documentation]

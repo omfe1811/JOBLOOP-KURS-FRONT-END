@@ -1,0 +1,25 @@
+🌟 Extra Challenge #2 (Optional)
+Create the following function:
+The function should take one parameter.
+
+Behavior:
+If the parameter is a string: return the string with "😎" added at the start and end
+
+If it’s a number:
+
+Double the number
+
+Convert to string
+
+Return with "😎" at the start and end
+
+If it’s a boolean:
+
+If true, return "😎Yes😎"
+
+If false, return "😎Relax😎"
+
+If it’s any other datatype:
+
+Return "😎Only primitive values😎"
+

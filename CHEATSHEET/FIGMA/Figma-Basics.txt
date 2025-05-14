@@ -1,0 +1,25 @@
+Figma Beginner Lesson
+Welcome
+This session will introduce you to Figma’s User Interface (UI), tools, and basic concepts to get started.
+1. Understanding Figma’s User Interface
+Learn the five main areas of the interface: Toolbar, Canvas, Layers Panel, Properties Panel, and File Explorer.
+2. Creating Frames and Shapes
+Understand the difference between frames and shapes. Use frames for layout and hierarchy, and shapes for visual elements.
+3. Accessing and Using Plugins
+Find and install plugins from the Community to boost productivity.
+4. Creating a Simple Wireframe
+Structure layouts using frames, keep wireframes grayscale, and use text and alignment tools for clarity.
+5. Figma Community
+Explore design files, plugins, and templates from other users. Share and follow others for inspiration.
+6. FigJam
+Use FigJam for brainstorming with sticky notes, drawings, and templates.
+7. Useful Shortcuts
+V – Select tool
+F – Frame tool
+Ctrl+N – New file
+Ctrl+S – Save
+Ctrl+Z – Undo
+R – Rectangle
+T – Text
+Ctrl+D – Duplicate
+Alt+Drag – Duplicate by dragging

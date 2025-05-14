@@ -1,0 +1,45 @@
+Creating a Movable Element
+
+Hello, JavaScript enthusiasts!
+
+In this task, we’ll explore the practical side of JavaScript by creating a movable HTML element. The goal is to make the element move freely around the browser window. The specifications are as follows:
+
+Functionality:
+
+Arrow Key Navigation: Implement functionality to move the element in four directions – up, down, left, and right – using the arrow keys.
+
+Click to Position: Allow the user to move the element directly by clicking anywhere on the page.
+
+Stay Visible: Make sure the element remains within the visible area of the screen.
+
+Implementation Tips:
+
+Use addEventListener() to capture events from arrow keys and mouse clicks.
+
+Use position: absolute to give the element full freedom of movement.
+
+Optional Challenges:
+
+You can improve the implementation with the following additions:
+
+Implement collision detection or add obstacles for extra complexity.
+
+Styling:
+
+While the main focus is functionality, feel free to style the element however you like. This task is great for a portfolio, so take the time to make the page presentable.
+
+Summary:
+
+Set up event listeners that capture arrow key presses and mouse clicks.
+
+Implement logic to update the element’s position based on the detected events.
+
+Optionally add extra features or constraints to make the task more challenging.
+
+Remember, the goal of this exercise is to strengthen your understanding of event listeners and manipulation of HTML elements using JavaScript.
+
+Clean and well-organized code makes it easier to keep track of all components! If you need to use a loop, take the opportunity to practice the advanced array methods we've gone over.
+
+Also, don’t forget to activate GitHub Pages for your submission.
+
+Good luck with your coding adventure! 🎉

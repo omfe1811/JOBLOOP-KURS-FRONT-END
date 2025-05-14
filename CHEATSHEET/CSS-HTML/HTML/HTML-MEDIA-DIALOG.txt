@@ -1,0 +1,66 @@
+1. Media
+
+1.1. Video
+
+The <video> tag allows you to add video to your website.
+
+Example:
+
+<video width="600" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+This embeds a video with playback controls. The video can be played directly in the browser.
+
+---
+
+1.2. Audio
+
+The <audio> tag is used to add audio files to your website.
+Audio files can be played using controls like play, pause, and volume.
+
+Example:
+
+<audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio>
+
+---
+
+1.3. iFrame
+
+The <iframe> tag lets you embed another webpage or external content into your own website.
+Common use cases include embedding YouTube videos, Google Maps, or other third-party resources.
+
+Example:
+
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        width="560" height="315" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+
+This embeds a YouTube video onto your page.
+
+---
+
+2. Dialog
+
+The <dialog> tag is used to create a dialog box (like a popup).
+Dialogs can be used to display information, ask for confirmation, or get user input.
+It can be opened and closed with JavaScript (though understanding JavaScript is not necessary here).
+
+Example:
+
+<dialog id="myDialog">
+  <p>Are you sure you want to continue?</p>
+  <button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+
+<button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+In this example, the dialog will appear when the user clicks the "Open Dialog" button.
+The dialog can be closed by clicking the "Close" button.
+

@@ -1,0 +1,48 @@
+Figma Advanced 1-1: Design System
+What Is a Design System?
+A design system is a collection of reusable elements, defined by style guides and principles, which serve as a template for your design projects.
+Benefits of a Design System:
+    • Consistency across designs
+    • Easier collaboration between team members
+    • More efficient workflow and faster design iterations
+
+Color Palette & Style Guides
+When creating a design system, start with defining your color scheme and visual effects.
+Color Palette Includes:
+    • Primary Colors – Main theme colors used across the UI
+    • Secondary Colors – Accent colors to highlight or support the primary palette
+    • Neutral Colors – For backgrounds, borders, and text
+Visual Effects:
+    • Add depth using effects like:
+        ? Shadows
+        ? Blurs
+
+Typography in the Design System
+Establish a clear typographic hierarchy for better readability and structure.
+Text Hierarchy Examples:
+    • Headings (e.g., H1, H2)
+    • Body Text
+    • Button Text
+Use text styles to:
+    • Maintain consistency
+    • Allow for easy global updates when changing fonts or sizes
+
+Components
+What Are Components?
+Components are reusable design elements such as:
+    • Buttons
+    • Input fields
+    • Cards
+Benefits of Components:
+    • Design more efficiently by reusing instead of recreating
+    • Update all instances by modifying the main component
+
+Organization Best Practices
+Naming & Layer Management:
+    • Use meaningful names for layers in the Layers Panel
+(e.g., btn/primary, card/product)
+    • This improves navigation and collaboration
+Component & Style Organization:
+    • Store and group components in logical folders
+    • Keep styles (colors, text, effects) in shared libraries for easy access and reuse
+

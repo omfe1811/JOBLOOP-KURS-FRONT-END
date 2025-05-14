@@ -1,0 +1,76 @@
+1. What are CSS Variables?
+
+CSS variables allow us to store values that can be reused throughout the CSS.
+
+They are defined using `--` (two dashes before the variable name) and are used with the `var()` function.
+
+Example:
+
+:root {
+  --primary-color: #3498db;
+}
+
+body {
+  color: var(--primary-color);
+}
+
+---
+
+2. Advantages of CSS Variables
+
+- Reusability: Makes it easier to use the same value in multiple places in your CSS.
+- Easy updates: Changing one variable updates all usages of that value.
+- Dynamic: Variables can be changed with JavaScript.
+
+---
+
+3. Best Practices for CSS Variables
+
+- Define variables inside `:root` for global access.
+- Use descriptive names for variables.
+
+Example:
+
+:root {
+  --font-size: 16px;
+  --line-height: 1.5;
+  --spacing-unit: 20px;
+}
+
+---
+
+HTML Validation
+
+1. What is HTML Validation?
+
+HTML validation is the process of checking if your HTML code follows the standards defined by W3C.
+
+It helps detect syntax errors and improve website accessibility and performance.
+
+---
+
+2. How to Validate HTML
+
+- Use the W3C Validator: Visit the W3C HTML Validator (https://validator.w3.org/) to check your HTML.
+- Upload your HTML file or paste your code to receive feedback on any issues.
+
+---
+
+3. What is Lighthouse?
+
+Lighthouse is a tool from Google that provides insights into the performance, accessibility, and SEO of web pages.
+
+You can use Lighthouse in Chrome Developer Tools to run tests and get suggestions for improvement.
+
+How to use Lighthouse:
+
+1. Open Chrome Developer Tools (Press F12 or right-click and choose "Inspect").
+2. Go to the "Lighthouse" tab.
+3. Run a report for your website.
+
+Lighthouse scores your page on factors like:
+
+- Performance (page load speed, mobile friendliness)
+- Accessibility (color contrast, screen reader support)
+- SEO (search engine optimization)
+

@@ -1,0 +1,41 @@
+React Lesson 1: Component-Based Framework
+About Frontend Frameworks
+As we can see from how design systems are set up and how applications are assembled from the resulting components, there's a significant difference from just HTML and CSS. This is where frontend frameworks come in (especially component-based ones). They bring with them pre-built functionality and styling so that we can create websites and applications from the components we put together in Figma, such as dropdown menus, various named buttons, workspaces, entire pages, and more.
+
+There are a number of these frameworks, but React was the first and has remained the most in-demand, which is the reason why we've chosen this one.
+
+Components
+Most design systems today are based on assembling graphical interfaces from a set of components.
+
+Example of components in a graphical interface:
+
+HTML gives you a very basic set of components to construct websites, but the designs that are usually envisioned require different breakdowns. This is where React and other component-based frameworks provide a system/toolset to create your own components and use them to assemble graphical interfaces that are tailored to the needs of your application.
+
+How
+Basics
+The simplest components consist of a function that takes no arguments and returns the new type of JSX. This is fine for very simple components that aren't meant to vary, such as a logo.
+
+Variations (Properties/Props)
+Most components you create will be more useful if you can pass arguments and create variations based on these. This can range from changing the URLs in an image carousel to defining what should happen when a button is clicked, to entire product pages that change content depending on which product is being displayed.
+
+Containers/Frames
+A more advanced, but very useful way of creating components is when you want to create reusable containers/frames where you can change what content they hold only when you assemble the page/application. This can range from simple layout components to ensure consistent navigation bars and footers across all pages, to encapsulating more complex functionality through generic dropdown menus or other similar components.
+
+Rendering Lists
+In addition to assembling our own "HTML" elements, we also have functionality built in for rendering lists of components from lists of data. React supports directly rendering lists (arrays) with JSX, so this is easily done by generating a new array from the dataset that contains React components or JSX based on the data, primarily through an inline JavaScript Array.map method call on the dataset.
+
+Build Systems
+TODO: Simple intro to the compilation process and Vite, source code -> machine code
+
+Links
+React
+
+Official React Website
+
+Other Frameworks
+
+Vue: Good documentation in non-English, mainly used by Asian companies
+
+Svelte: New and trendy, still few job opportunities (approximate ratio React 150 / Svelte 1)
+
+Angular: Primarily used in large enterprises for its strong and clear guidelines on how applications should be structured

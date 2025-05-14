@@ -1,0 +1,36 @@
+Figma Lesson: Auto Layout
+In this session, we will explore Auto Layout in Figma—a powerful feature that makes your design work more efficient and responsive. Auto Layout helps you create flexible designs that automatically adapt to content. By the end of this lesson, you will know how to:
+    • Understand how Auto Layout works in Figma.
+    • Use Auto Layout to create flexible layouts.
+    • Adjust spacing, padding, and alignment in Auto Layout.
+    • Use Auto Layout for responsive design.
+    • Work with buttons, text, and components using Auto Layout.
+1. What is Auto Layout in Figma?
+Auto Layout is a feature that automatically adjusts the size and position of elements within a frame, depending on their content. It makes it easier to create designs that adapt to content or screen size without manual adjustments.
+
+Key Concepts:
+- Frames with Auto Layout: A frame acts as a container for your elements, and when Auto Layout is applied, its content adjusts automatically as the frame size changes.
+- Spacing and Padding: Adjust the space between elements and the padding inside frames.
+- Alignment and Distribution: Control how elements are positioned relative to each other (e.g., left, center, right).
+- Resizing Options: Choose how elements should behave when the frame size changes (e.g., 'Hug contents' or 'Fill container').
+2. How to Use Auto Layout in Figma
+Step-by-step guide to using Auto Layout:
+
+- Create a frame with Auto Layout:
+  Select a frame and click the '+' icon next to Auto Layout in the properties panel. The frame’s contents will now adjust automatically.
+
+- Adjust spacing and padding:
+  Use the properties panel to change the spacing between items by modifying the 'Spacing Between Items' value. Adjust padding to add space between the content and the frame edges.
+
+- Align elements:
+  Use alignment options (top, middle, bottom, left, right) to see how the layout changes.
+
+- Resizing:
+  Test different resizing settings, such as 'Hug contents' and 'Fill container', to control how content behaves when the frame is resized.
+3. Practical Exercise: Create an Auto Layout Design
+Instructions:
+
+- Open a new Figma file.
+- Create a simple button design using Auto Layout so the button adapts to its content.
+- Adjust spacing, padding, and alignment to make the button look good.
+- Try resizing the frame and observe how the elements automatically adapt.

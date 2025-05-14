@@ -1,0 +1,26 @@
+We’ve learned about asynchronous JavaScript, particularly how to use Promises and async/await to handle asynchronous code. In this task, you’ll practice those skills by creating a website that uses an API to fetch data.
+
+You’re free to choose any free API (here’s a comprehensive list).
+
+Project Requirements
+To ensure you're challenging yourself, your project must include a certain level of complexity, such as:
+
+An API with multiple endpoints that you use in your project.
+
+An API with an endpoint that accepts parameters in the URL.
+
+API data that must be looped through to fetch or generate content.
+
+Your project must meet at least two of these criteria.
+
+Tips for Implementation
+The documentation of most public APIs provides details on how to use them, what endpoints they have, and which parameters they accept. Read the documentation carefully! 🤓
+
+Do not use APIs that require an API key (we haven’t covered how to secure API keys yet).
+
+Recommendations
+This is a perfect opportunity to build something that stands out in your portfolio! I strongly recommend focusing on design to make your project look great.
+
+Previous students at Kodehode have successfully used APIs like this to create exciting projects.
+
+Good luck, and remember to challenge yourself by exploring APIs with a bit of complexity! 🌟

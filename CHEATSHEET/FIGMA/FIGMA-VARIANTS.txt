@@ -1,0 +1,99 @@
+Exploring Variants in Figma
+
+In this session, we'll explore Variants in Figma. Variants make it easier to manage different versions of a design element—such as buttons in various states (normal, hover, pressed), or different sizes and colors of components.
+
+By the end of this lesson, you will know how to:
+
+- Create and organize variants in Figma.
+- Use variants to manage multiple states of a component.
+- Define and adjust properties for variants.
+- Use variants effectively to simplify the design process.
+
+---
+
+1. What are Variants in Figma?
+
+Variants in Figma are a powerful feature that allows you to group multiple versions of a component into a single component set. This means you can have multiple states (e.g., Normal, Hover, Pressed) or versions (e.g., Small, Medium, Large) of a design element in one component and quickly switch between them.
+
+Key Concepts:
+
+- Component Sets: When you create variants, they are organized into a single component set. Each variant can have its own properties (e.g., text, color, size).
+- Properties (Props): Each variant can be assigned custom properties such as "State" (e.g., Normal, Hover, Pressed) or "Size" (e.g., Small, Medium, Large).
+- Efficiency: Variants help keep your designs organized and provide fast access to different versions of a component without needing separate components.
+
+---
+
+2. How to Create and Use Variants in Figma
+
+Step-by-step guide:
+
+Creating a Component Set with Variants:
+
+- Create the base component you want to have multiple versions of (e.g., a button).
+- Select the components you want to combine.
+- Right-click and select “Combine as Variants.”
+- Figma will group them into a single component set as variants.
+
+Adding Properties (Props):
+
+- Once variants are created, you can define properties to describe their differences (e.g., “State” for Normal, Hover, Pressed).
+- In the properties panel, define values for each variant’s property—like text, color, or size.
+
+Using Variants in Your Design:
+
+- Drag the component set into your canvas.
+- After placing a component, you can choose the desired variant via the properties panel. This allows you to switch states or versions instantly.
+
+---
+
+3. How to Define Properties for Variants
+
+Properties (props) let you define and control the attributes of each variant. For example, a button might use a property to define its state or size.
+
+Common Properties:
+
+- State: Defines interaction states like “Normal,” “Hover,” or “Pressed.”
+- Size: Defines the size of the component (e.g., Small, Medium, Large).
+- Color: Defines color schemes (e.g., Primary, Secondary).
+- Icon: Indicates if an icon is shown within the component.
+
+How to Use Properties:
+
+- Select a component variant.
+- In the properties panel, update values as needed—for example, change “State” from Normal to Hover, or “Size” from Medium to Large.
+- All instances of that variant in the design will reflect the change.
+
+---
+
+4. Examples of Using Variants
+
+Button with Multiple States:
+
+- Create a button component.
+- Add variants for Normal, Hover, and Pressed.
+- When using the button in your design, switch states using the “State” property.
+
+Icons in Different Sizes:
+
+- Create an icon component.
+- Add variants for Small, Medium, and Large.
+- Use size property in your designs to switch between them.
+
+Component with Multiple Colors:
+
+- Create a component such as a card or button.
+- Add variants with different color schemes like Primary, Secondary.
+- Use the color property to easily switch styling in your design.
+
+---
+
+5. Hands-On Practice: Create and Use Variants
+
+Instructions:
+
+- Open a new Figma file.
+- Create a component (e.g., a button) and make at least three variants (e.g., Normal, Hover, Pressed).
+- Define properties for these variants—such as text, color, and size.
+- Use the variants in your design and adjust properties as needed.
+- Share your work with classmates for feedback.
+

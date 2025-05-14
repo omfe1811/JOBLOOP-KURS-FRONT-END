@@ -1,0 +1,74 @@
+1. Color Formats
+
+1.1 Hex Values
+
+Hex values are used to represent colors in CSS using a six-digit code system. The format is #RRGGBB, where:
+
+    RR represents the intensity of red.
+    GG represents the intensity of green.
+    BB represents the intensity of blue.
+
+Each pair (RR, GG, BB) consists of two hexadecimal characters (0-9 and A-F). Hexadecimal numbers use a base of 16, where:
+
+    0 is the lowest value (no intensity).
+    F is the highest value (maximum intensity).
+
+How to read hex values?
+
+    #000000: This is black because all components (red, green, and blue) have zero intensity.
+    #FFFFFF: This is white because all components have maximum intensity.
+    #FF0000: This is pure red because red is max (FF), while green and blue are zero (00).
+    #00FF00: This is pure green.
+    #0000FF: This is pure blue.
+    #FF5733: This is a light red-orange color. Let's break it down:
+        FF: Maximum intensity for red.
+        57: Moderate intensity for green.
+        33: Low intensity for blue.
+
+Example in CSS:
+
+background-color: #ff5733; /* Background color set to light red-orange */
+
+Shortened format:
+
+When a hex value has equal pairs for each component (e.g., #FFAA99), you can write it in a shorter form as #FA9. This means:
+
+    F = FF (maximum intensity for red).
+    A = AA (mid intensity for green).
+    9 = 99 (low intensity for blue).
+
+1.2 RGB
+
+RGB stands for Red, Green, Blue. The colors are specified with values ranging from 0 to 255. The format is rgb(red, green, blue). Example:
+
+background-color: rgb(255, 87, 51); /* Light red-orange */
+
+1.3 RGBA
+
+RGBA is an extension of RGB where A stands for alpha (transparency), and the value ranges from 0 (completely transparent) to 1 (completely opaque). Example:
+
+background-color: rgba(255, 87, 51, 0.5); /* Light red-orange with 50% transparency */
+
+1.4 HSL
+
+HSL stands for Hue (Tone), Saturation, and Lightness. It provides an intuitive way to describe colors with the format:
+hsl(hue, saturation%, lightness%)
+Hue (Tone)
+
+    Measured in degrees (0-360) on a color wheel.
+    0°: Red, 120°: Green, 240°: Blue, with transitional colors like orange and purple in between.
+
+Saturation
+
+    Specified as a percentage (%).
+    0%: Grays (no color).
+    100%: Full intensity (pure color).
+
+Lightness
+
+    Specified as a percentage (%).
+    0%: Black, 100%: White, 50%: Pure color.
+
+Examples:
+
+background-color: hsl(10, 100%, 50
