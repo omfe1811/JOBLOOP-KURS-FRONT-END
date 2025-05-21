@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --lightest-green:#fcfffb;
+  --dark-blue-font:#000130;
+--pink:#ffd2ed;
+--dark-green: #3f826dff;
+--light-green: #ecffe7ff;
+--yellow:#f9e08d;
+}
+
+body{
+  background-color:var(--lightest-green); /* Black or dark background helps with reflection contrast */
+  color:var(--dark-blue-font); /* White or light-colored font */
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#color-pallete {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+}
+#color-pallete>div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    padding: 1%;
+    justify-content: flex-end;
+    font-size: 2rem;
+    text-align: center;
+}
+.bg-pink,
+.bg-dark-green,
+.bg-light-green,
+.bg-yellow,.bg-dark-blue {
+  flex: 1;
+  height: 100%;
+  width: auto;
+}
+
+.bg-pink{
+    background-color: var(--pink);
+}
+.bg-dark-green{
+    background-color: var(--dark-green);
+}
+.bg-light-green{
+    background-color: var(--light-green);
+}
+.bg-yellow{
+    background-color: var(--yellow);
+}
+.bg-dark-blue{
+    background-color: var(--dark-blue-font);
+    color: white;
+}
+/* Additional styles for buttons, layout, and finish screen */
+/* button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+input, select {
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+#frogPreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dashed #3c763d;
+}
+
+#learnMoreBtn {
+  background-color: #009688;
+}
+
+#learnMoreBtn:hover {
+  background-color: #00796b;
+} */
+/* .h100vh{
+  height: 100vh;
+} */
+/* .align{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  justify-content: center;
+} */
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/*                    FONTS                   */
+
+.heading-main {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin:1%;
+}
+.size96{
+  font-size: 96px;
+}
+.size74{
+    font-size: 74px;
+}
+.size54{
+    font-size: 54px;
+}
+.size74{
+    font-size: 74px;
+}
+
+.size48{
+    font-size: 48px;
+}
+.size38{
+    font-size: 38px;
+}
+.size28{
+    font-size: 28px;
+}
+.text{
+  font-family: "scomic";
+  margin:1%;
+}
+@font-face {
+    font-family: 'scomic' ;
+    src: url('FONTS/madernscomic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

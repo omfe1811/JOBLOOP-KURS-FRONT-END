@@ -1,0 +1,94 @@
+| Feature                       | Concepts Applied                                   |
+| ----------------------------- | -------------------------------------------------- |
+| Choose frog type              | Arrays, `select` dropdown, object mapping          |
+| Name your frog                | String input, variable storage                     |
+| Customize colors              | DOM manipulation, style changes                    |
+| Choose pattern                | Dynamic class application                          |
+| Add accessories               | Conditional rendering, show/hide elements          |
+| Final summary                 | Template literals, object data usage, dynamic HTML |
+| Optional: Save multiple frogs | Arrays of objects, looped rendering                |
+Welcome Panel
+
+"Welcome to the Frog Customizer! 🐸"
+
+Start button → shows customization form
+
+Customizer Form
+
+Select Frog Type: (Tree Frog, Toad, Dart Frog, etc.)
+
+Name: Text input
+
+Body Color: Color picker
+
+Eye Color: Color picker
+
+Pattern: Dropdown (None, Spots, Stripes)
+
+Accessories: Checkboxes (Crown, Bowtie, Sunglasses, Leaf Hat)
+
+Preview Button
+
+Generates frog preview with all applied styles and name/description.
+
+Frog Display Panel
+
+Visual frog (styled div or svg)
+
+Display chosen name and auto-generated short bio
+"Darty is a vibrant Dart Frog with shimmering green eyes and a crown. Loves dancing in the rain."
+
+🧠 Implementation Tips
+Use one main object to store the frog’s attributes:
+const frog = {
+  type: '',
+  name: '',
+  bodyColor: '',
+  eyeColor: '',
+  pattern: '',
+  accessories: []
+};
+Use querySelector() and addEventListener() to capture inputs and update the frog object live.
+
+Use a function to apply styles (e.g., body color changes background of frog div).
+
+Use conditional logic to generate a fun randomized description based on choices.
+ Bonus Features (Optional for Stretch Goals)
+🎲 Randomize Frog: Add a “Surprise Me” button that fills out the form randomly.
+
+📸 Download Frog: Use html2canvas to let users download their creation as an image.
+
+🐸 Save Multiple Frogs: Let users create multiple frogs and display them in a collection grid.
+
+🧠 Frog Facts: Add fun frog facts that change based on the frog species selected.
+ Execution Plan
+Start with HTML layout: form + display areas.
+
+Implement the customization logic and object storage.
+
+Add DOM updates for real-time preview.
+
+Style the frog using CSS classes and JS modifications.
+
+Generate final description and summary display.
+
+(Optional) Add extra features like randomize, save, etc.
+
+INSPO
+https://meiker.io/play/15376/online.html
+ELEMENTS:
+Name + PRONOUNS
+COLOR
+EYES
+MOUTH
+ARMS
+ACCESORIES
+BACKGROUND(pattern,flag, color)
+DONE+PREVIEW
+
+FINISH
+NAME ON TOP
+FROG
+DOWNLOAD BUTTON
+FROG PUN
+LEARN MORE ABOUT RAIN FROGS
