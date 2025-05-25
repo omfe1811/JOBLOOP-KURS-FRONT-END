@@ -38,7 +38,6 @@ Visual frog (styled div or svg)
 Display chosen name and auto-generated short bio
 "Darty is a vibrant Dart Frog with shimmering green eyes and a crown. Loves dancing in the rain."
 
-🧠 Implementation Tips
 Use one main object to store the frog’s attributes:
 const frog = {
   type: '',

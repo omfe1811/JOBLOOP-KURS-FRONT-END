@@ -112,13 +112,8 @@ padding: 5%;
   width:13rem;
   transition: border 0.3s ease, opacity 0.3s ease;
 }
-.soundButton:hover{
-  border: 1px solid var(--neon);
-  opacity: 1;
-}
 .soundButton:hover,
 .soundButton.clicked {
-  transition: ease-in-out 2s;
   border: 1px solid var(--blue);
   opacity: 1;
 }

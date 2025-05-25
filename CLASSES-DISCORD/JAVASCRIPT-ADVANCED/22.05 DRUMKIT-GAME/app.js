@@ -60,9 +60,10 @@ textElement.appendChild(labelSpan);
 
 drumElement.appendChild(textElement);
   drumElement.addEventListener('click', ()=>{
+    drumElement.classList.add('active');
     playsound(soundMap[key]);
   });
-};
+
 const playsound=(sound)=>{
   const audio = new Audio(`./SOUNDS/${sound}.wav`);
   audio.play();
@@ -75,3 +76,4 @@ document.addEventListener('keydown', (e)=>{
     playsound(sound);
   }
 })
+};
