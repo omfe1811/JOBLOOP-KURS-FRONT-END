@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Olga Mazur Assignments</title>
   <link rel="stylesheet" href="styles.css" />
-  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
+
 </head>
 <body>
    <header>
@@ -82,8 +83,10 @@
   <footer>
     <p>&copy; Olga Mazur – <a href="https://github.com/omfe1811" target="_blank">GitHub</a></p>
   </footer>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
   <script>
+    
     function loadJSCode(repoPath, elementId) {
       const rawBase = 'https://raw.githubusercontent.com/omfe1811/JOBLOOP-KURS-FRONT-END/main/';
       const url = rawBase + repoPath;

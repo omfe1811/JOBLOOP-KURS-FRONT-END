@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task App</title>
+  <style>
+    .task-container {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
+
+    .completed {
+      background-color: #d4edda;
+      text-decoration: line-through;
+    }
+
+    .datetime {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+  <h1>Task Manager</h1>
+
+  <form id="task-form">
+    <input
+      type="text"
+      id="task-input"
+      name="task-input"
+      placeholder="Enter a task"
+      required
+    />
+    <input type="submit" value="Add to do">
+    </form>
+    <label for="show-completed">Toggle completed tasks</label>
+    <input type="checkbox" name="show-completed" id="show-completed">
+    <button id="clear-all-tasks">Clear All Tasks</button>
+  </header>
+<main id="list-container"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
