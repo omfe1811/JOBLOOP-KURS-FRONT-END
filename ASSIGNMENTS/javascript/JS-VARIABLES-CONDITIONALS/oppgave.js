@@ -47,27 +47,27 @@ let number2 = 33;
 let number3 = 19;
 console.log(
   "Addition: " +
-    (number1 + number2) +
-    "\n" +
-    "Subtraction: " +
-    (number2 - number3) +
-    "\n" +
-    "Multiplication: " +
-    number3 * number2 +
-    "\n" +
-    "Division: " +
-    number1 / number2 +
-    "\n" +
-    "Remainder : " +
-    (number1 % number3) +
-    "\n" +
-    "Exponent: " +
-    number2 ** number3 +
-    "\n" +
-    (number1 += number3) +
-    "\n" +
-    (number1 -= number3) +
-    "\n"
+  (number1 + number2) +
+  "\n" +
+  "Subtraction: " +
+  (number2 - number3) +
+  "\n" +
+  "Multiplication: " +
+  number3 * number2 +
+  "\n" +
+  "Division: " +
+  number1 / number2 +
+  "\n" +
+  "Remainder : " +
+  (number1 % number3) +
+  "\n" +
+  "Exponent: " +
+  number2 ** number3 +
+  "\n" +
+  (number1 += number3) +
+  "\n" +
+  (number1 -= number3) +
+  "\n"
 );
 
 /******************************************************************************

@@ -80,24 +80,25 @@ let averageAge = 0;
 for (let i = 0; i < people.length; i++) {
 	if (people[i].name === "Otto") {
 		continue;
-	}else{
-        const randomCity = Math.ceil(Math.random()*cities.length);
+	} else {
+		const randomCity = Math.ceil(Math.random() * cities.length);
 		people[i].city = cities[randomCity];
-		if(people[i].male){
+		if (people[i].male) {
 			people[i].title = "Mr."
-		}else{
+		} else {
 			people[i].title = "Ms."
 		}
 		people[i].age += 2;
 		combinedAge += people[i].age;
 		if (people[i].name === "Otto") {
-			combinedAge -= people[i].age;}
-            people[i].hobbies.unshift("coding")
+			combinedAge -= people[i].age;
 		}
-        
+		people[i].hobbies.unshift("coding")
 	}
-	console.log(people);
-averageAge=combinedAge/(people.length-1);
+
+}
+console.log(people);
+averageAge = combinedAge / (people.length - 1);
 console.log(averageAge)
 
 /******************************************************************************
@@ -119,13 +120,13 @@ diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 
 // Skriv koden for oppgave 2 her
 let resultArr = [];
-function diceRoll(rolls, diceSides){
-for(i=0; i<rolls; i++){
-  result = Math.ceil(Math.random() * diceSides);
-  resultArr.push(result);
+function diceRoll(rolls, diceSides) {
+	for (i = 0; i < rolls; i++) {
+		result = Math.ceil(Math.random() * diceSides);
+		resultArr.push(result);
+	}
 }
-}
-diceRoll(8,20);
+diceRoll(8, 20);
 console.log(resultArr);
 
 /******************************************************************************
@@ -149,14 +150,14 @@ skal returnere:
 
 // Skriv koden for oppgave 3 her
 
-const stringArr=[" thIS", "teXt ", " nEeds ", "to", "BE", "cleANED ", " Up"];
+const stringArr = [" thIS", "teXt ", " nEeds ", "to", "BE", "cleANED ", " Up"];
 let newArr = [];
-function formatText(stringArr){
-  for ( let word of stringArr){
-    let formattedWord = word.trim().toLowerCase();
-    newArr.push(formattedWord);
-  }
-  return newArr.join(" ");
+function formatText(stringArr) {
+	for (let word of stringArr) {
+		let formattedWord = word.trim().toLowerCase();
+		newArr.push(formattedWord);
+	}
+	return newArr.join(" ");
 
 }
 console.log(formatText(stringArr));
@@ -185,25 +186,25 @@ function doubleSwap(string, charA, charB) {
 	// Skriv koden for oppgave 4 her
 }
 function doubleSwap(string, charA, charB) {
-	let result="";
-  for(i=0; i<string.length; i++){
-	if(string[i]===charA){
-	  result+=charB;
+	let result = "";
+	for (i = 0; i < string.length; i++) {
+		if (string[i] === charA) {
+			result += charB;
+		}
+		else if (string[i] === charB) {
+			result += charA;
+		} else {
+			result += string[i]
+		}
 	}
-	else if(string[i]===charB){
-	  result+=charA;
-	} else{
-	  result+=string[i]
-	}
-  }
-  return result
-  
-  }
-  
-  console.log(doubleSwap("this is a string", "i", "s"))
+	return result
 
- /******************************************************************************
-								OPPGAVE 5
+}
+
+console.log(doubleSwap("this is a string", "i", "s"))
+
+/******************************************************************************
+							   OPPGAVE 5
 *******************************************************************************
 EKSTRA UTFORDRING:
 (Løsning av denne oppgaven er ikke obligatorisk, kun for de som vil ha en ekstra utfordring)
@@ -226,42 +227,41 @@ Jeg har lagt til noen testvariabler for å sjekke funksjonen din.
 ******************************************************************************/
 
 const greetings = [
-  "Hello, how are you today?",
-  "Diciamo ciao prima di andare!",
-  "Salut, ça va bien?",
-  "Kannst du mich hören? Hallo!",
-  "Hva er regex?",
-  "Nos saludamos con un alegre hola.",
-  "Ona pomachała i powiedziała cześć z uśmiechem.",
-  "Good afternoon gentlemen!"
+	"Hello, how are you today?",
+	"Diciamo ciao prima di andare!",
+	"Salut, ça va bien?",
+	"Kannst du mich hören? Hallo!",
+	"Hva er regex?",
+	"Nos saludamos con un alegre hola.",
+	"Ona pomachała i powiedziała cześć z uśmiechem.",
+	"Good afternoon gentlemen!"
 ];
 
 // Skriv koden for oppgave 5 her
 
-	  function helloChecker(text){
-		const lowerText=text.toLowerCase();
-		let language="";
-		if (lowerText.includes("hello")){
-		  language="English";
-		}else if(lowerText.includes("ciao")){
-		  language="Italian";
-	  }else if(lowerText.includes("salut")){
-		language="French";
-	  }else if(lowerText.includes("hallo")){
-		language="German";  
-	  }else if(lowerText.includes("hola")){
-		language="Spanish"; 
-	  }else if(lowerText.includes("czesc")||lowerText.includes("cześć")){
-		language="Polish";
-	  }
-	  if(language){
-		console.log(`HELLO detected in ${language}.`)
-	  }else{
-		console.log("No HELLO detected.")
-	  }
+function helloChecker(text) {
+	const lowerText = text.toLowerCase();
+	let language = "";
+	if (lowerText.includes("hello")) {
+		language = "English";
+	} else if (lowerText.includes("ciao")) {
+		language = "Italian";
+	} else if (lowerText.includes("salut")) {
+		language = "French";
+	} else if (lowerText.includes("hallo")) {
+		language = "German";
+	} else if (lowerText.includes("hola")) {
+		language = "Spanish";
+	} else if (lowerText.includes("czesc") || lowerText.includes("cześć")) {
+		language = "Polish";
 	}
-	   for (const greeting of greetings){
-		helloChecker(greeting)
-	   }
-	
-	
+	if (language) {
+		console.log(`HELLO detected in ${language}.`)
+	} else {
+		console.log("No HELLO detected.")
+	}
+}
+for (const greeting of greetings) {
+	helloChecker(greeting)
+}
+

@@ -22,14 +22,13 @@ funksjonen)
 ******************************************************************************/
 
 // Skriv koden for oppgave 1 her
-function evenOrOdd(n){
-    if (isNaN(n)) /* check if input is a number */ 
-  {    
-    isEven="Must input numbers"; /* ERROR MESSAGE FOR NOT NUMBER */
-  } else if (n%2 == 0){ /* CHECK IF REST FROM DIVISION BY TWO IS 0 */
-         isEven="Even Number"; /* MESSAGE FOR AN EVEN NUMBER */
-    }else{
-        isEven="Odd Number"; /* MESSAGE FOR AN ODD NUMBER */
+function evenOrOdd(n) {
+    if (isNaN(n)) /* check if input is a number */ {
+        isEven = "Must input numbers"; /* ERROR MESSAGE FOR NOT NUMBER */
+    } else if (n % 2 == 0) { /* CHECK IF REST FROM DIVISION BY TWO IS 0 */
+        isEven = "Even Number"; /* MESSAGE FOR AN EVEN NUMBER */
+    } else {
+        isEven = "Odd Number"; /* MESSAGE FOR AN ODD NUMBER */
     }
     return isEven;
 }
@@ -47,8 +46,8 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
-function toUpperExclaim(string){
-    const newString=String(string).toUpperCase().trim()+" !"; 
+function toUpperExclaim(string) {
+    const newString = String(string).toUpperCase().trim() + " !";
     return newString;
 }
 console.log(toUpperExclaim(""))
@@ -75,28 +74,30 @@ Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
-  let message="";
-    let name="";
-function welcome(name, hour){
-    if (hour<0&&hour>=23){
-        message="Invalid time."
-        name="";
-    }else if(hour==null){
-        message="Error! Provide an hour."
-        name="";
-    }else if (hour<=5){
-        message="Good night"
-    }else if (hour<=11){
-        message="Good morning"}
-    else if (hour<=17){
-        message="Good day"}
-    else if (hour<=23){
-        message="Good evening"
+let message = "";
+let name = "";
+function welcome(name, hour) {
+    if (hour < 0 && hour >= 23) {
+        message = "Invalid time."
+        name = "";
+    } else if (hour == null) {
+        message = "Error! Provide an hour."
+        name = "";
+    } else if (hour <= 5) {
+        message = "Good night"
+    } else if (hour <= 11) {
+        message = "Good morning"
     }
-       let greetName=`${message} ${name}`;
-         return greetName;
+    else if (hour <= 17) {
+        message = "Good day"
+    }
+    else if (hour <= 23) {
+        message = "Good evening"
+    }
+    let greetName = `${message} ${name}`;
+    return greetName;
 }
-console.log(welcome("Olga",3))
+console.log(welcome("Olga", 3))
 /******************************************************************************
 4.
 
@@ -113,12 +114,12 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 ******************************************************************************/
 
 let animals = ["Lion", "Tiger", "Elephant", "Giraffe", "Zebra", "Kangaroo", "Panda"];
-let  colors = ["Red", "Green", "Blue", "Yellow", "Purple", "Orange", "Pink"];
-function removeFirstLast(array){
-let newArray = array.slice();
-newArray.pop();
-newArray.shift();
-return newArray;
+let colors = ["Red", "Green", "Blue", "Yellow", "Purple", "Orange", "Pink"];
+function removeFirstLast(array) {
+    let newArray = array.slice();
+    newArray.pop();
+    newArray.shift();
+    return newArray;
 }
 console.log(removeFirstLast(colors))
 
@@ -143,9 +144,9 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 
 
 
-function transformString(string){
-    newString= string.trim();
-    newString=newString.replace(/vanskelig/g,"gøy")
+function transformString(string) {
+    newString = string.trim();
+    newString = newString.replace(/vanskelig/g, "gøy")
     return newString;
 }
 console.log(transformString(" Det er vanskelig å bruke metoder "))
@@ -175,15 +176,15 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 // 
 
 
-function transformArray(array){
+function transformArray(array) {
     let newArray = array.slice(1); //remove "Bok"
-    newArray.splice(0,2, "Markeringspenn"); //replace index 0, 1 (Penn,Notatbok) with Markeringspenn
+    newArray.splice(0, 2, "Markeringspenn"); //replace index 0, 1 (Penn,Notatbok) with Markeringspenn
     newArray = newArray.map(item => item === "Viskelær" ? "Linjal" : item);//replace Viskelær with Linjal
-   let newArrayE =newArray.filter(words=>words.toLowerCase().includes("e"));//make new array with only words containing "e"
+    let newArrayE = newArray.filter(words => words.toLowerCase().includes("e"));//make new array with only words containing "e"
     const arrayToString = newArray.join(" | ");//join the newArray with " / ", make it a string
     return [arrayToString, newArrayE];//return values of arrayToString and newArrayE and store it in an array
 }
-let result=transformArray(items);//assign result to result of transformArray, populate it with arrayToString and newArrayE
+let result = transformArray(items);//assign result to result of transformArray, populate it with arrayToString and newArrayE
 console.log(result[0]);//log items from array result with index [0]-arrayToString
 console.log(result[1]);//log item from array result with index [1]-newArrayE
 
@@ -212,11 +213,11 @@ Eksempel 4: (["En", "To", "Tre"], "To") --> ["En", "Tre"]
 ******************************************************************************/
 
 // Skriv koden for oppgave 7 her
-let array=["Red", "Green"];
-let string="Purple";
-if(array.includes(string)){
+let array = ["Red", "Green"];
+let string = "Purple";
+if (array.includes(string)) {
     array.pop(string)
-}else{
+} else {
     array.push(string)
 }
 console.log(array);
@@ -247,25 +248,25 @@ Returner "😎Kun primitive verdier😎".
 ******************************************************************************/
 
 let emoji = "😎";
-function typeOperations(param){
-    let message="";
-    if (typeof param === "string"){
+function typeOperations(param) {
+    let message = "";
+    if (typeof param === "string") {
         message = param;
-    }else if (typeof param === "number"){
-        param= (param*2).toString();
-        message =param;
+    } else if (typeof param === "number") {
+        param = (param * 2).toString();
+        message = param;
     }
-    else if (typeof param === "boolean"){
-        if(param){
-            message="Ja"
-        }else{
-        message ="Slapp av";
+    else if (typeof param === "boolean") {
+        if (param) {
+            message = "Ja"
+        } else {
+            message = "Slapp av";
         }
-    }else{
-        message="Kun primitive verdier"
+    } else {
+        message = "Kun primitive verdier"
     }
- message= emoji+message+emoji;
- return message;
+    message = emoji + message + emoji;
+    return message;
 }
 console.log(typeOperations(3));
 console.log(typeOperations(true));
