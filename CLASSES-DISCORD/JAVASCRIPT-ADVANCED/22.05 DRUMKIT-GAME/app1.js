@@ -43,6 +43,13 @@ for (const key in soundMap) {
 
   drumElement.addEventListener('click', () => {
     playSoundWithEffect(key);
+     if (!drumElement) return;
+  drumElement.classList.add('active');
+  playsound(soundMap[key]);
+
+  setTimeout(() => {
+    drumElement.classList.remove('active');
+  }, 500);
   });
 }
 
@@ -56,7 +63,6 @@ document.addEventListener('keydown', (e) => {
 function playSoundWithEffect(key) {
   const drumElement = keyToElementMap[key];
   if (!drumElement) return;
-
   drumElement.classList.add('active');
   playsound(soundMap[key]);
 

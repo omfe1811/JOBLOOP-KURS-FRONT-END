@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Olga Mazur Assignments</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
+
 
 </head>
 <body>
@@ -35,7 +36,7 @@
             <li><a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/ASSIGNMENTS/HTML%20CSS/CSS-ANIMATION/index.html">CSS Animation</a></li>
             <li><a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/ASSIGNMENTS/HTML%20CSS/PLANET/index.html">Planet</a></li>
             <li><a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/ASSIGNMENTS/HTML%20CSS/flexbox/index.html">Flexbox</a></li>
-            <li><a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/ASSIGNMENTS/HTML%20CSS/grid-oppgave/testimonials-grid-section-main/index.htmll">Grid Oppgave</a></li>
+            <li><a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/ASSIGNMENTS/HTML%20CSS/grid-oppgave/testimonials-grid-section-main/index.html">Grid Oppgave</a></li>
           </ul>
         </li>
       </ul>
@@ -45,28 +46,28 @@
   <main>
     <section>
       <h2 id="oppgave1-code1">JavaScript Basic Oppgave 1: Variables & Conditionals</h2>
-      <pre><code id="oppgave1-code">Loading...</code></pre>
+      <pre><code  class="language-javascript" id="oppgave1-code">Loading...</code></pre>
 
       <h2 id="oppgave2-code1">JavaScript Basic Oppgave 2: Funksjoner & Metoder</h2>
-      <pre><code id="oppgave2-code">Loading...</code></pre>
+      <pre><code class="language-javascript"  id="oppgave2-code">Loading...</code></pre>
 
       <h2 id="oppgave3-code1">JavaScript Basic Oppgave 3: Løkker & Objekter</h2>
-      <pre><code id="oppgave3-code">Loading...</code></pre>
+      <pre><code class="language-javascript"  id="oppgave3-code">Loading...</code></pre>
 
       <h2 id="oppgave4-code1">JavaScript Basic Oppgave 4: DOM Manipulation</h2>
-      <pre><code id="oppgave4-code">Loading...</code></pre>
+      <pre><code class="language-javascript"  id="oppgave4-code">Loading...</code></pre>
 
       <h2 id="oppgave5-code1">JavaScript Advanced Oppgave 1: Create a movable object</h2>
-      <pre><code id="oppgave5-code">Loading...</code></pre>
+      <pre><code  class="language-javascript" id="oppgave5-code">Loading...</code></pre>
 
       <h2 id="oppgave6-code1">JavaScript Advanced Oppgave 3 - API-oppgave</h2>
-      <pre><code id="oppgave6-code">Loading...</code></pre>
+      <pre><code  class="language-javascript" id="oppgave6-code">Loading...</code></pre>
 
       <h2 id="oppgave7-code1">JavaScript Advanced Oppgave 4: Vite Webpage</h2>
-      <pre><code id="oppgave7-code">Loading...</code></pre>
+      <pre><code  class="language-javascript" id="oppgave7-code">Loading...</code></pre>
 
       <h2 id="oppgave8-code1">JavaScript Advanced Minioppgave: High order methods</h2>
-      <pre><code id="oppgave8-code">Loading...</code></pre>
+      <pre><code  class="language-javascript" id="oppgave8-code">Loading...</code></pre>
     </section>
     <section id="html-oppgaver"><h1>HTML & CSS Assignments</h1>
   <ul class="assignment-list">
@@ -84,9 +85,7 @@
     <p>&copy; Olga Mazur – <a href="https://github.com/omfe1811" target="_blank">GitHub</a></p>
   </footer>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-  <script>
-    
+<script>hljs.highlightAll();
     function loadJSCode(repoPath, elementId) {
       const rawBase = 'https://raw.githubusercontent.com/omfe1811/JOBLOOP-KURS-FRONT-END/main/';
       const url = rawBase + repoPath;
@@ -102,6 +101,7 @@
           const codeBlock = document.getElementById(elementId);
           if (codeBlock) {
             codeBlock.textContent = code;
+            hljs.highlightAll();
           }
         })
         .catch(error => {

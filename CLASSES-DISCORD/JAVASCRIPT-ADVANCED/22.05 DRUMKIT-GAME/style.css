@@ -86,7 +86,7 @@ body{
   background-color: var(--dark-purple);
   background-position: center;
   background-size:cover;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #drum-container{  display: grid;
@@ -98,28 +98,33 @@ body{
 }
 
 .soundButton{
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid transparent;
- opacity: 0.85;
+ opacity: 0.80;
   text-transform: uppercase; 
   background-color:#170628;
   border-radius: 20px;
   cursor: pointer;
-padding: 5%;
+padding: 4%;
   text-align: center;
    font-weight: bold;
-  height: 8rem;
+  height: fit-content;
   width:13rem;
   transition: border 0.3s ease, opacity 0.3s ease;
 }
-.soundButton:hover,
-.soundButton.clicked {
+
+e
+.soundButton.clicked, .active {
   border: 1px solid var(--blue);
+  opacity: 1;
+}
+.soundButton:hover{
   opacity: 1;
 }
 .active{
      border: 1px solid var(--neon);
-  opacity: 1;
 }
 .keyLabel{
     color:#ffffff;
@@ -208,7 +213,54 @@ FONTS
 @font-face {
     font-family: 'daftpunk';
    src: url('FONTS/Daft Font.TTF') format('truetype');
-
     font-weight: normal;
     font-style: normal;
+}
+
+@media only screen 
+   and (max-width : 1800px) {
+.font-13rem{
+    font-size: 10rem;
+}
+.keyLabel{
+    font-size: 2rem;
+}
+.soundLabel{
+    font-size: 1rem;
+}
+#drum-container{
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+.m2{
+    margin: 1%;
+}
+}
+@media only screen 
+   and (max-width : 1300px) {
+   
+.font-13rem{
+    font-size: 9rem;
+}
+.keyLabel{
+    font-size: 1.5rem;
+}
+.soundLabel{
+    font-size: 1rem;
+}
+#drum-container{
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+.m2{
+    margin: 2%;
+}
+.soundButton{
+  
+  width:8rem;
+}
 }
