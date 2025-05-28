@@ -14,7 +14,7 @@
 			<nav class="navbar">
 				<ul class="nav-menu">
 					<li>
-						<a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/"
+						<a class="navbar-link" href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/"
 							>Olga Mazur Assignments</a
 						>
 					</li>
@@ -30,34 +30,34 @@
 								>
 							</li>
 							<li>
-								<a href="#oppgave1-code1"
+								<a class="navbar-link" href="#oppgave1-code1"
 									>Basic Oppgave 1: Variables & Conditionals</a
 								>
 							</li>
 							<li>
-								<a href="#oppgave2-code1"
+								<a class="navbar-link" href="#oppgave2-code1"
 									>Basic Oppgave 2: Funksjoner & Metoder</a
 								>
 							</li>
 							<li>
-								<a href="#oppgave3-code1">Basic Oppgave 3: Løkker & Objekter</a>
+								<a class="navbar-link" href="#oppgave3-code1">Basic Oppgave 3: Løkker & Objekter</a>
 							</li>
 							<li>
-								<a href="#oppgave4-code1">Basic Oppgave 4: DOM Manipulation</a>
+								<a class="navbar-link" href="#oppgave4-code1">Basic Oppgave 4: DOM Manipulation</a>
 							</li>
 							<li>
-								<a href="#oppgave5-code1"
+								<a class="navbar-link" href="#oppgave5-code1"
 									>Advanced Oppgave 1: Create a movable object</a
 								>
 							</li>
 							<li>
-								<a href="#oppgave6-code1">Advanced Oppgave 3 - API-oppgave</a>
+								<a class="navbar-link" href="#oppgave6-code1">Advanced Oppgave 3 - API-oppgave</a>
 							</li>
 							<li>
-								<a href="#oppgave7-code1">Advanced Oppgave 4: Vite Webpage</a>
+								<a class="navbar-link" href="#oppgave7-code1">Advanced Oppgave 4: Vite Webpage</a>
 							</li>
 							<li>
-								<a href="#oppgave8-code1"
+								<a class="navbar-link" href="#oppgave8-code1"
 									>Advanced Minioppgave: High order methods</a
 								>
 							</li>
@@ -118,8 +118,8 @@
 		</header>
 
 		<main>
-			<section>
-        <h2  id="soundboard">Daft Punk Soundboard <a href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/CLASSES-DISCORD\JAVASCRIPT-ADVANCED\22.05 DRUMKIT-GAME\index.html ">Open</a> </h2>
+			<section  id="soundboard">
+        <h2>Daft Punk Soundboard <a id="d" href="https://omfe1811.github.io/JOBLOOP-KURS-FRONT-END/CLASSES-DISCORD\JAVASCRIPT-ADVANCED\22.05 DRUMKIT-GAME\index.html ">Click to open</a> </h2>
 				<pre><code  class="language-javascript" id="soundboardjs">Loading...</code></pre>
 				<h2  id="oppgave1-code1">
 					JavaScript Basic Oppgave 1: Variables & Conditionals
@@ -185,11 +185,20 @@
 		<footer>
 			<p>
 				&copy; Olga Mazur –
-				<a href="https://github.com/omfe1811" target="_blank">GitHub</a>
+				<a href="https://github.com/omfe1811">GitHub</a>
 			</p>
 		</footer>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 		<script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('a[href]');
+    links.forEach(link => {
+       if (!link.classList.contains('navbar-link')) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  });
 			hljs.highlightAll();
 			function loadJSCode(repoPath, elementId) {
 				const rawBase =
@@ -232,7 +241,7 @@
 			loadJSCode(
 				"ASSIGNMENTS/javascript/JS-OBJECTS/oppgave.js",
 				"oppgave3-code"
-			); //jsjshh
+			);
 			loadJSCode(
 				"ASSIGNMENTS/javascript/JS-DOM-MANIPULATION/oppgave.js",
 				"oppgave4-code"
