@@ -5,7 +5,7 @@ You’ll use both ::before and ::after, as well as selectors like :nth-child, :h
 📋 Assignment Specifications
 Create a webpage with the following content:
 
-A main heading (<h1>) that describes the topic (e.g., "Learn Pseudo-elements").
+                    A main heading (<h1>) that describes the topic (e.g., "Learn Pseudo-elements").         
 
 An unordered list (<ul>) with at least 5 items.
 
