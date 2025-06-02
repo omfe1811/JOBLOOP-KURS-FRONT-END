@@ -242,25 +242,24 @@ FONTS
    and (max-width : 1300px) {
    
 .font-13rem{
-    font-size: 9rem;
+    font-size: 7rem;
 }
 .keyLabel{
     font-size: 1.5rem;
 }
 .soundLabel{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 #drum-container{
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
-  padding: 0;
+  padding: 1%;
 }
 .m2{
-    margin: 2%;
+    margin: 1%;
 }
 .soundButton{
-  
-  width:8rem;
+  width:9rem;
 }
 }
