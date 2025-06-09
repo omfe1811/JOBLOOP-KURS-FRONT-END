@@ -1,0 +1,29 @@
+$colors: (
+	"light-sky-blue": #97d2fbff,
+	"hunter-green": #2a6041ff,
+	"mimi-pink": #eccdddff,
+	"tea-green": #e0edb8ff,
+	"pistachio": #8abd7aff,
+	"dark-red": #230903,
+);
+$font-size: (
+	"xs": 0.875rem,
+	"s": 1rem,
+	"m": 1.25rem,
+	"l": 2rem,
+	"xl": 3rem,
+	"xxl": 4rem,
+);
+@each $name, $value in $colors {
+	.#{$name}-bg {
+		background-color: $value;
+	}
+	.#{$name}-font {
+		color: $value;
+	}
+}
+@each $name, $value in $font-size {
+	.font-#{$name} {
+		font-size: $value;
+	}
+}

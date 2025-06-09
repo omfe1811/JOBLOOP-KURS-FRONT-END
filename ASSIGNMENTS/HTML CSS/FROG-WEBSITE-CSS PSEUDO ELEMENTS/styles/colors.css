@@ -1,0 +1,73 @@
+.light-sky-blue-bg {
+	background-color: #97d2fb;
+}
+
+.light-sky-blue-font {
+	color: #97d2fb;
+}
+
+.hunter-green-bg {
+	background-color: #2a6041;
+}
+
+.hunter-green-font {
+	color: #2a6041;
+}
+
+.mimi-pink-bg {
+	background-color: #eccddd;
+}
+
+.mimi-pink-font {
+	color: #eccddd;
+}
+
+.tea-green-bg {
+	background-color: #e0edb8;
+}
+
+.tea-green-font {
+	color: #e0edb8;
+}
+
+.pistachio-bg {
+	background-color: rgba(138, 189, 122, 0.8);
+}
+
+.pistachio-font {
+	color: #8abd7a;
+}
+
+.dark-red-bg {
+	background-color: #230903;
+}
+
+.dark-red-font {
+	color: #230903;
+}
+
+.font-xs {
+	font-size: 0.875rem;
+}
+
+.font-s {
+	font-size: 1rem;
+}
+
+.font-m {
+	font-size: 1.6rem;
+}
+
+.font-l {
+	font-size: 2rem;
+}
+
+.font-xl {
+	font-size: 3rem;
+}
+
+.font-xxl {
+	font-size: 4rem;
+}
+
+/*# sourceMappingURL=colors.css.map */
