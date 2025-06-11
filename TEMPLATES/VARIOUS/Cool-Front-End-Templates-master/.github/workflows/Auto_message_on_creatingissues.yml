@@ -1,0 +1,18 @@
+name: Auto message on Creating Issue.
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create comment for issue
+      if: github.event_name =='issues' 
+      uses: peter-evans/create-or-update-comment@v1
+      with:
+        issue-number: ${{tojson(github.event.issue.number)}}
+        body: Hello there!👋, @${{ github.actor }} Welcome to the Cool-Front-End_Templates project!🚀⚡Thank you and congrats🎉 for opening issue in this project. Please make sure not to start working on the issue, unless you get assigned to it.😄 <b> currently we are not accepting new templates sorry for inconvenience u can checkout the issues which are opend or u can create a issue for improving any existing template </b>
+             
+  
