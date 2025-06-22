@@ -1,0 +1,85 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 1rem;
+	line-height: 1.5;
+	background: #fff;
+	color: black;
+}
+header,
+footer {
+	background: rgb(205, 255, 205);
+	padding: 1rem;
+	text-align: center;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1rem;
+	margin: 2rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.box {
+	background: lightblue;
+	padding: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+@media (min-width: 600px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 900px) {
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #121212;
+		color: aliceblue;
+	}
+	.box {
+		background: #333;
+		color: #fff;
+	}
+	main > p,
+	header > h1,
+	footer > p {
+		background-color: black;
+		color: aliceblue;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition: none !important;
+		animation: none !important;
+	}
+}
+@media (orientation: landscape) {
+	body::before {
+		content: "Youre in a landscape mode";
+		display: block;
+		background: rgb(255, 250, 250);
+		color: #121212;
+		text-align: center;
+		padding: 0.5rem;
+		font-weight: bold;
+	}
+}
+@supports (display: grid) {
+	.supports-msg::before {
+		content: "You're browser supports grid!✨";
+		background: rgb(1, 56, 38);
+	}
+}
+@supports not (display: grid) {
+	.supports-msg::before {
+		content: "You're browser does not support grid!😒";
+		color: red;
+	}
+}
