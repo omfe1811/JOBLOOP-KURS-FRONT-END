@@ -8,7 +8,9 @@ export default function Counter() {
 	return (
 		<>
 			<h1>Click Me!</h1>
-			<button className='bg-red-900 border-solid'>BUTTON</button>
+			<div className='p-6 font-bold text-white bg-green-500'>
+				Tailwind is working!
+			</div>
 			<button onClick={handleClick} className='bg-red-900 border-solid'>
 				<img
 					src='cookie.png'
