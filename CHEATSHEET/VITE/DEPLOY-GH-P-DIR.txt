@@ -1,0 +1,82 @@
+Perfect — we can make a **smart deploy script** that automatically sets the correct `base` for Vite, commits changes, builds, and deploys to GitHub Pages, all in **one command**. Here’s a version for PowerShell:
+
+---
+
+### **deploy.ps1**
+
+```powershell
+# 1️⃣ Get the GitHub repo name automatically
+$repoUrl = git config --get remote.origin.url
+if ($repoUrl -match "/(.+)\.git$") {
+    $repoName = $matches[1]
+} else {
+    Write-Host "❌ Could not detect repo name from git remote."
+    exit 1
+}
+
+Write-Host "Detected repo name: $repoName"
+
+# 2️⃣ Update vite.config.js base
+$configFile = "vite.config.js"
+$baseLinePattern = 'base:.*'
+$viteConfig = Get-Content $configFile
+$found = $false
+
+for ($i=0; $i -lt $viteConfig.Length; $i++) {
+    if ($viteConfig[$i] -match $baseLinePattern) {
+        $viteConfig[$i] = "  base: `"/$repoName/`","
+        $found = $true
+    }
+}
+
+if (-not $found) {
+    Write-Host "❌ base field not found in vite.config.js"
+    exit 1
+}
+
+Set-Content $configFile $viteConfig
+Write-Host "Updated vite.config.js base to /$repoName/"
+
+# 3️⃣ Commit any changes
+git add .
+git commit -m "Auto-save before GH Pages deploy" -a
+
+# 4️⃣ Clean dist folder
+if (Test-Path "dist") { Remove-Item -Recurse -Force dist }
+
+# 5️⃣ Build project
+npm run build
+
+# 6️⃣ Deploy to GitHub Pages
+npm run deploy
+
+Write-Host "✅ Deployment complete! Visit https://$($env:USERNAME).github.io/$repoName/"
+```
+
+---
+
+### **How it works**
+
+1. Detects your repo name from Git’s remote URL.
+2. Updates `vite.config.js` `base` to `/repo-name/`.
+3. Commits any uncommitted changes on `main`.
+4. Cleans old `dist/`, builds, and deploys using your `npm run deploy` script.
+5. Prints your GitHub Pages URL at the end.
+
+---
+
+### **Usage**
+
+1. Save as `deploy.ps1` in your project root.
+2. Open PowerShell in your project directory.
+3. Run:
+
+```powershell
+.\deploy.ps1
+```
+
+---
+
+✅ After this, you’ll have a **foolproof single-command deploy**: correct base path, committed changes, clean build, and deployed to GitHub Pages.
+
+If you want, I can also **modify it to skip committing if there are no changes**, so you won’t get unnecessary auto-save commits. That keeps your history cleaner. Do you want me to do that too?
